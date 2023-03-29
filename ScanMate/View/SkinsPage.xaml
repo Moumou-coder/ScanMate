@@ -2,14 +2,43 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ScanMate.View.SkinsPage"
+             xmlns:model="clr-namespace:ScanMate.Model"
              xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
              x:DataType="viewmodel:ChampionsViewModel"
              Title="SkinsPage">
-    
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome Skins"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ScrollView>
+        <CollectionView>
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type model:Skins}">
+                    <model:Skins 
+                        ChampionImage="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg"
+                        ChampionName="Aaron"
+                        SkinName="Super"
+                        SkinPrice="120"/>
+                </x:Array>
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Skins">
+                    <HorizontalStackLayout Padding="10" Spacing="10">
+                        <Image 
+                            Source="{Binding ChampionImage}"
+                            HeightRequest="100"
+                            WidthRequest="100"
+                            Aspect="AspectFill"/>
+                        <Label VerticalOptions="Center">
+                            <Label.Text>
+                                <MultiBinding StringFormat="{}{0} | {1} | {2}">
+                                    <Binding Path="ChampionName" />
+                                    <Binding Path="SkinName" />
+                                    <Binding Path="SkinPrice" />
+                                </MultiBinding>
+                            </Label.Text>
+                        </Label>
+                        </HorizontalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ScrollView>
+
 </ContentPage>
