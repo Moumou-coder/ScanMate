@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScanMate.MainPage"
+             xmlns:local="clr-namespace:ScanMate"
+             xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
+             x:DataType="viewmodel:MainViewModel"
+             x:Name="MyPage"
+             >
+
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="{Binding MyTitle}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="25" FontAttributes="Bold, Italic"/>
+        </Grid>
+    </Shell.TitleView>
+
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Characters" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
+            <MenuFlyoutItem Text="Champions" 
+                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToChampionsPageCommand}"
+                            CommandParameter="From Champions!"/>
+            <MenuFlyoutItem Text="Skins" 
+                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToSkinsPageCommand}"
+                            CommandParameter="From Skins!"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+    <VerticalStackLayout>
+        <Label 
+            Text="Version 1.0"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+
+
+</ContentPage>

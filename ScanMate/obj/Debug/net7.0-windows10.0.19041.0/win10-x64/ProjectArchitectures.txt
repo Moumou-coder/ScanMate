@@ -1,0 +1,1 @@
+C:\Users\Moumou\Desktop\C# Q4\ScanMate Project\ScanMate\ScanMate\ScanMate.csproj;x64
