@@ -25,12 +25,4 @@
         </MenuBarItem>
     </ContentPage.MenuBarItems>
 
-    <VerticalStackLayout>
-        <Label 
-            Text="Version 1.0"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-
-
 </ContentPage>
