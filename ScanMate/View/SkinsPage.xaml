@@ -7,38 +7,36 @@
              x:DataType="viewmodel:ChampionsViewModel"
              Title="SkinsPage">
 
-    <ScrollView>
-        <CollectionView>
-            <CollectionView.ItemsSource>
-                <x:Array Type="{x:Type model:Skins}">
-                    <model:Skins 
+    <CollectionView>
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type model:Skins}">
+                <model:Skins 
                         ChampionImage="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg"
                         ChampionName="Aaron"
                         SkinName="Super"
                         SkinPrice="120"/>
-                </x:Array>
-            </CollectionView.ItemsSource>
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:Skins">
-                    <HorizontalStackLayout Padding="10" Spacing="10">
-                        <Image 
+            </x:Array>
+        </CollectionView.ItemsSource>
+        <CollectionView.ItemTemplate>
+            <DataTemplate x:DataType="model:Skins">
+                <HorizontalStackLayout Padding="10" Spacing="10">
+                    <Image 
                             Source="{Binding ChampionImage}"
                             HeightRequest="100"
                             WidthRequest="100"
                             Aspect="AspectFill"/>
-                        <Label VerticalOptions="Center">
-                            <Label.Text>
-                                <MultiBinding StringFormat="{}{0} | {1} | {2}">
-                                    <Binding Path="ChampionName" />
-                                    <Binding Path="SkinName" />
-                                    <Binding Path="SkinPrice" />
-                                </MultiBinding>
-                            </Label.Text>
-                        </Label>
-                        </HorizontalStackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </ScrollView>
+                    <Label VerticalOptions="Center">
+                        <Label.Text>
+                            <MultiBinding StringFormat="{}{0} | {1} | {2}">
+                                <Binding Path="ChampionName" />
+                                <Binding Path="SkinName" />
+                                <Binding Path="SkinPrice" />
+                            </MultiBinding>
+                        </Label.Text>
+                    </Label>
+                </HorizontalStackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 
 </ContentPage>
