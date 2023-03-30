@@ -1,21 +1,21 @@
 [
   {
 	"ChampionImage": "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg",
-	"ChampionName": "Aatrox"
-	"SkinName": "Aatrox The Justicier"
+	"ChampionName": "Aatrox",
+	"SkinName": "Aatrox The Justicier",
 	"SkinPrice": 790
   }, 
   {
-	"ChampionImage": "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg",
-	"ChampionName": "Ahri"
-	"SkinName": "Ahri Dynastie"
-	"SkinPrice": 1080
+	"Image": "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg",
+	"ChampionName": "Ahri",
+	"Name": "Ahri Dynastie",
+	"Price": 1080
   }, 
   {
-	"ChampionImage": "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg",
-	"ChampionName": "Akali"
-	"SkinName": "Akali Infernal"
-	"SkinPrice": 293
-  }, 
+	"Image": "https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg",
+	"ChampionName": "Moli",
+	"Name": "Moli Folle",
+	"Price": 50
+  }
  
 ]

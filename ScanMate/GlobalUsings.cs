@@ -1,11 +1,16 @@
 global using ScanMate.View;
 global using ScanMate.ViewModel;
 global using ScanMate.Model;
+global using ScanMate.Services;
 
 global using CommunityToolkit.Mvvm.ComponentModel;
 global using CommunityToolkit.Mvvm.Input;
 
-public class Globals
+global using System.Text.Json;
+global using System.Collections.ObjectModel;
+
+internal class Globals
 {
-    //public static List<Skins> MyStaticSkinsList = new();
+    public static List<Skins> StaticListSkins = new List<Skins>();
+    public static Queue<string> SerialBuffer = new Queue<string>();
 }

@@ -23,10 +23,10 @@ public static class MauiProgram
 
         builder.Services.AddTransient<ChampionsPage>();
         builder.Services.AddTransient<ChampionsViewModel>();
-
         builder.Services.AddTransient<SkinsPage>();
         builder.Services.AddTransient<SkinsViewModel>();
 
+		builder.Services.AddTransient<SkinsService>();
 
         return builder.Build();
 	}
