@@ -2,14 +2,19 @@ namespace ScanMate.View;
 
 public partial class ChampionsPage : ContentPage
 {
-	public ChampionsPage(ChampionsViewModel viewModel)
-	{
-		InitializeComponent();
+    private readonly ChampionsViewModel viewModel;
+
+    public ChampionsPage(ChampionsViewModel viewModel)
+    {
+        InitializeComponent();
+        this.viewModel = viewModel;
         BindingContext = viewModel;
     }
 
-    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    protected override async void OnAppearing()
     {
-        base.OnNavigatedTo(args);
+        base.OnAppearing();
+        await viewModel.GetChampionsFromJSON();
     }
+    protected override void OnNavigatedTo(NavigatedToEventArgs args) { base.OnNavigatedTo(args); }
 }
