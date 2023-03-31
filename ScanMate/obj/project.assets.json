@@ -26310,11 +26310,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate Project\\ScanMate\\ScanMate\\ScanMate.csproj",
+      "projectUniqueName": "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate\\ScanMate\\ScanMate.csproj",
       "projectName": "ScanMate",
-      "projectPath": "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate Project\\ScanMate\\ScanMate\\ScanMate.csproj",
+      "projectPath": "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate\\ScanMate\\ScanMate.csproj",
       "packagesPath": "C:\\Users\\Moumou\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate Project\\ScanMate\\ScanMate\\obj\\",
+      "outputPath": "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate\\ScanMate\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

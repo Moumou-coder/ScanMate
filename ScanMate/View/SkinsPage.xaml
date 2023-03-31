@@ -4,41 +4,32 @@
              x:Class="ScanMate.View.SkinsPage"
              xmlns:model="clr-namespace:ScanMate.Model"
              xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
-             x:DataType="viewmodel:ChampionsViewModel"
+             x:DataType="viewmodel:SkinsViewModel"
              Title="SkinsPage">
 
     <ScrollView>
-        <CollectionView>
-            <CollectionView.ItemsSource>
-                <x:Array Type="{x:Type model:Skins}">
-                    <model:Skins 
-                        ChampionImage="https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/baboon.jpg"
-                        ChampionName="Aaron"
-                        SkinName="Super"
-                        SkinPrice="120"/>
-                </x:Array>
-            </CollectionView.ItemsSource>
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="model:Skins">
-                    <HorizontalStackLayout Padding="10" Spacing="10">
-                        <Image 
-                            Source="{Binding ChampionImage}"
-                            HeightRequest="100"
-                            WidthRequest="100"
-                            Aspect="AspectFill"/>
-                        <Label VerticalOptions="Center">
-                            <Label.Text>
-                                <MultiBinding StringFormat="{}{0} | {1} | {2}">
-                                    <Binding Path="ChampionName" />
-                                    <Binding Path="SkinName" />
-                                    <Binding Path="SkinPrice" />
-                                </MultiBinding>
-                            </Label.Text>
-                        </Label>
-                        </HorizontalStackLayout>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+        <Grid BackgroundColor="Transparent">
+            <CollectionView ItemsSource="{Binding mySkinList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Skins">
+                        <Grid>
+                            <Border>
+                                <Grid BackgroundColor="Grey" ColumnDefinitions="*,*,*,*" Padding="4">
+                                    <Image  Aspect="AspectFill"
+                                            HeightRequest="100"
+                                            WidthRequest="100" 
+                                            Grid.Column="0"
+                                            Source="{Binding Image}"/>
+                                    <Label VerticalOptions="Center" Grid.Column="1" Text="{Binding ChampionName}" />
+                                    <Label VerticalOptions="Center" Grid.Column="2" Text="{Binding Name}"/>
+                                    <Label VerticalOptions="Center" Grid.Column="3" Text="{Binding Price}"/>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
     </ScrollView>
 
 </ContentPage>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wgsO45cJFRSuIBX70Kq+ORNw3Uduz88NIdu4oIJNFDsY9f+zCXEgUebVXGtAFrbvy142PooeJswp61sfO5MflQ==",
+  "dgSpecHash": "QJd1J4xzpNfPYUhmzBGQdcwY0/l9N/esv3G47K+NtLNA2TUn1jduou/m+5ydg5PWlrkFKjxAcgbN+RzLgywamQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate Project\\ScanMate\\ScanMate\\ScanMate.csproj",
+  "projectFilePath": "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate\\ScanMate\\ScanMate.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Moumou\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0-preview1\\communitytoolkit.mvvm.8.2.0-preview1.nupkg.sha512",
     "C:\\Users\\Moumou\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",

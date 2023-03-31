@@ -1,0 +1,94 @@
+[
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
+		"Name": "Aatrox",
+		"Title": "the Darkin Blade",
+		"Attack": 8,
+		"Defense": 4,
+		"Magic": 3,
+		"Difficulty": 4
+	},
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg",
+		"Name": "Ahri",
+		"Title": "the Nine-Tailed Fox",
+		"Attack": 3,
+		"Defense": 4,
+		"Magic": 8,
+		"Difficulty": 5
+	},
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
+		"Name": "Akali",
+		"Title": "the Rogue Assassin",
+		"Attack": 5,
+		"Defense": 3,
+		"Magic": 8,
+		"Difficulty": 7
+	},
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg",
+		"Name": "Darius",
+		"Title": "the Hand of Noxus",
+		"Attack": 9,
+		"Defense": 5,
+		"Magic": 1,
+		"Difficulty": 2
+	},
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg",
+		"Name": "Fizz",
+		"Title": "the Tidal Trickster",
+		"Attack": 6,
+		"Defense": 4,
+		"Magic": 7,
+		"Difficulty": 6
+	},
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg",
+		"Name": "Gragas",
+		"Title": "the Rabble Rouser",
+		"Attack": 4,
+		"Defense": 7,
+		"Magic": 6,
+		"Difficulty": 5
+	},
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg",
+		"Name": "Hecarim",
+		"Title": "the Shadow of War",
+		"Attack": 8,
+		"Defense": 6,
+		"Magic": 4,
+		"Difficulty": 6
+	},
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg",
+		"Name": "Kayn",
+		"Title": "the Shadow Reaper",
+		"Attack": 10,
+		"Defense": 6,
+		"Magic": 1,
+		"Difficulty": 8
+	},
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg",
+		"Name": "Malzahar",
+		"Title": "the Lord of the Void",
+		"Attack": 2,
+		"Defense": 2,
+		"Magic": 9,
+		"Difficulty": 6
+	},
+	{
+		"Image": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg",
+		"Name": "Urgot",
+		"Title": "the Dreadnought",
+		"Attack": 8,
+		"Defense": 5,
+		"Magic": 3,
+		"Difficulty": 8
+	}
+
+
+]
