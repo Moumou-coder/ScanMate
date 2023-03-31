@@ -52,6 +52,7 @@
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0-preview1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="System.IO.Ports" Version="8.0.0-preview.2.23128.3" />
+		<PackageReference Include="System.Management" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>

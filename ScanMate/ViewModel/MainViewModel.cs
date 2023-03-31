@@ -2,6 +2,14 @@ namespace ScanMate.ViewModel;
 
 public partial class MainViewModel : ObservableObject
 {
+    BarCodeService MyBarCodeService;
+
+    public MainViewModel()
+    {
+        this.MyBarCodeService = new BarCodeService();
+        MyBarCodeService.ConfigureScanner();
+    }
+
 	[ObservableProperty]
 	string myTitle = "League Of Legend V1.0";
 
