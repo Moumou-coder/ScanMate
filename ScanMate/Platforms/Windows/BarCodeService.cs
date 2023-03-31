@@ -2,11 +2,13 @@ namespace ScanMate.Services;
 
 public partial class BarCodeService
 {
-    SerialPort mySerialPort;
+    public SerialPort mySerialPort;
 
     public partial void ConfigureScanner()
     {
-        this.mySerialPort = new SerialPort();
+        this.SerialBuffer = new();
+        this.mySerialPort = new();
+
         string ComPort = "";
 
         using (var searcher = new ManagementObjectSearcher("SELECT * FROM Win32_PnPEntity WHERE Caption like '%(COM%'"))
@@ -24,29 +26,32 @@ public partial class BarCodeService
                 }
             }
         }
-        if (ComPort != "")
+        if (ComPort == "")
         {
-            mySerialPort.PortName = ComPort;
-            mySerialPort.BaudRate = 9600;
-            mySerialPort.Parity = Parity.None;
-            mySerialPort.DataBits = 8;
-            mySerialPort.StopBits = StopBits.One;
+            ComPort = "COM5";
+        }
 
-            mySerialPort.ReadTimeout = 1000;
-            mySerialPort.WriteTimeout = 1000;
+        mySerialPort.PortName = ComPort;
+        mySerialPort.BaudRate = 9600;
+        mySerialPort.Parity = Parity.None;
+        mySerialPort.DataBits = 8;
+        mySerialPort.StopBits = StopBits.One;
 
-            mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataHandler);
+        mySerialPort.ReadTimeout = 1000;
+        mySerialPort.WriteTimeout = 1000;
 
-            try
-            {
-                mySerialPort.Open();
-            }
-            catch (Exception ex)
-            {
-                Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
-            }
+        mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataHandler);
+
+        try
+        {
+            mySerialPort.Open();
+        }
+        catch (Exception ex)
+        {
+            Shell.Current.DisplayAlert("Error!", ex.Message, "OK");
         }
     }
+
     private void DataHandler(object sender, SerialDataReceivedEventArgs e)
     {
         SerialPort sp = (SerialPort)sender;
@@ -54,7 +59,7 @@ public partial class BarCodeService
 
         data = sp.ReadTo("\r");
 
-        Globals.SerialBuffer.Enqueue(data);
+        SerialBuffer.Enqueue(data);
     }
 }
 

@@ -8,8 +8,9 @@
              Title="SkinsPage">
 
     <ScrollView>
-        <Grid BackgroundColor="Transparent">
-            <CollectionView ItemsSource="{Binding mySkinList}">
+        <Grid BackgroundColor="Transparent" ColumnDefinitions="*,*,*,*" RowDefinitions="Auto,*">
+            <Label Text="bala" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
+            <CollectionView ItemsSource="{Binding mySkinList}" Grid.Row="1" Grid.ColumnSpan="4">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:Skins">
                         <Grid>

@@ -10,9 +10,10 @@ global using System.Text.Json;
 global using System.Collections.ObjectModel;
 global using System.IO.Ports;
 global using System.Management;
+global using System.Collections;
 
 internal class Globals
 {
     public static List<Skins> StaticListSkins = new List<Skins>();
-    public static Queue<string> SerialBuffer = new Queue<string>();
+    public static List<Champions> StaticListChampions = new List<Champions>();
 }
