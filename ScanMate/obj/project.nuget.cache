@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QJd1J4xzpNfPYUhmzBGQdcwY0/l9N/esv3G47K+NtLNA2TUn1jduou/m+5ydg5PWlrkFKjxAcgbN+RzLgywamQ==",
+  "dgSpecHash": "i7m7EuXqr3j7vI9AT4r592Y3GH+IkXoM7XChJSbTyANlMuDjn6FbmiN6MtN1VUHGL2017kXw470mucHb9tYHdg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate\\ScanMate\\ScanMate.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,9 @@
     "C:\\Users\\Moumou\\.nuget\\packages\\runtime.native.system.io.ports\\8.0.0-preview.2.23128.3\\runtime.native.system.io.ports.8.0.0-preview.2.23128.3.nupkg.sha512",
     "C:\\Users\\Moumou\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\8.0.0-preview.2.23128.3\\runtime.osx-arm64.runtime.native.system.io.ports.8.0.0-preview.2.23128.3.nupkg.sha512",
     "C:\\Users\\Moumou\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\8.0.0-preview.2.23128.3\\runtime.osx-x64.runtime.native.system.io.ports.8.0.0-preview.2.23128.3.nupkg.sha512",
+    "C:\\Users\\Moumou\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
     "C:\\Users\\Moumou\\.nuget\\packages\\system.io.ports\\8.0.0-preview.2.23128.3\\system.io.ports.8.0.0-preview.2.23128.3.nupkg.sha512",
+    "C:\\Users\\Moumou\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512",
     "C:\\Users\\Moumou\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\Moumou\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",
     "C:\\Users\\Moumou\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.13.2.2\\xamarin.android.glide.disklrucache.4.13.2.2.nupkg.sha512",

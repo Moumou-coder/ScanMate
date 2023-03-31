@@ -98,6 +98,10 @@
               "target": "Package",
               "version": "[8.0.0-preview.2.23128.3, )"
             },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Xamarin.Android.Glide": {
               "target": "Package",
               "version": "[4.13.2.2, )",
@@ -223,6 +227,10 @@
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.2.23128.3, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -294,6 +302,10 @@
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.2.23128.3, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -382,6 +394,10 @@
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.2.23128.3, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

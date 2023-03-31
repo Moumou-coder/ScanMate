@@ -22,7 +22,7 @@
                                             Source="{Binding Image}"/>
                                     <Label VerticalOptions="Center" Grid.Column="1" Text="{Binding ChampionName}" />
                                     <Label VerticalOptions="Center" Grid.Column="2" Text="{Binding Name}"/>
-                                    <Label VerticalOptions="Center" Grid.Column="3" Text="{Binding Price}"/>
+                                    <Label VerticalOptions="Center" Grid.Column="3" Text="{Binding Price, StringFormat='{0} coins'}"/>
                                 </Grid>
                             </Border>
                         </Grid>

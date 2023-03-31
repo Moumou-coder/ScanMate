@@ -685,8 +685,14 @@
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.codedom\7.0.0\lib\net7.0\System.CodeDom.dll">
+      <PackagePath>System.CodeDom.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.io.ports\8.0.0-preview.2.23128.3\runtimes\win\lib\net7.0\System.IO.Ports.dll">
       <PackagePath>System.IO.Ports.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.management\7.0.0\runtimes\win\lib\net7.0\System.Management.dll">
+      <PackagePath>System.Management.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.graphics.win2d\1.0.4\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -712,8 +718,8 @@
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\Resources\Raw\ChampionsData.json">
       <PackagePath>ChampionsData.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\Resources\Raw\SkinsData.json">
-      <PackagePath>SkinsData.json</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\Resources\Raw\skinsdata.json">
+      <PackagePath>skinsdata.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>

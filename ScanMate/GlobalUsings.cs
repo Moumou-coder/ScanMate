@@ -8,6 +8,8 @@ global using CommunityToolkit.Mvvm.Input;
 
 global using System.Text.Json;
 global using System.Collections.ObjectModel;
+global using System.IO.Ports;
+global using System.Management;
 
 internal class Globals
 {
