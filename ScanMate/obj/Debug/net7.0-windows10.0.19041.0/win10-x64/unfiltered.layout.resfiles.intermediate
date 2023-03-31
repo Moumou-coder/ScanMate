@@ -57,4 +57,5 @@ splashSplashScreen.scale-150.png
 splashSplashScreen.scale-200.png
 splashSplashScreen.scale-400.png
 AboutAssets.txt
-skinsdata.json
+ChampionsData.json
+SkinsData.json

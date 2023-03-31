@@ -12,19 +12,18 @@ public partial class SkinsViewModel : ObservableObject
     }
 
     [RelayCommand]
-    async Task GetSkinsFromJSON(string data)
+    public async Task GetSkinsFromJSON()
     {
         try
         {
             Globals.StaticListSkins = await skinsService.GetSkins();
+            foreach (Skins skin in Globals.StaticListSkins) { mySkinList.Add(skin); }
         }
         catch (Exception ex)
         {
             await Shell.Current.DisplayAlert("Error : ", ex.Message, "OK");
         }
 
-        foreach (Skins skin in Globals.StaticListSkins) { mySkinList.Add(skin); }
     }
-
 
 }

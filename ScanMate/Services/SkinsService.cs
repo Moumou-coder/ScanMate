@@ -8,7 +8,7 @@ public class SkinsService : ContentPage
     public async Task<List<Skins>> GetSkins()
     {
 
-        using var stream = await FileSystem.OpenAppPackageFileAsync("skinsdata.json");
+        using var stream = await FileSystem.OpenAppPackageFileAsync("SkinsData.json");
         using var reader = new StreamReader(stream);
         var contents = await reader.ReadToEndAsync();
         skinsList = JsonSerializer.Deserialize<List<Skins>>(contents);
