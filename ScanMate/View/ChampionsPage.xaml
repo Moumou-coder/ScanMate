@@ -4,29 +4,26 @@
              x:Class="ScanMate.View.ChampionsPage"
              xmlns:model="clr-namespace:ScanMate.Model"
              xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
-             x:DataType="viewmodel:ChampionsViewModel"
-             Title="ChampionsPage">
+             x:DataType="viewmodel:ChampionsViewModel">
 
     <ScrollView>
-        <Grid BackgroundColor="Transparent" ColumnDefinitions="*,*" RowDefinitions="*,Auto">
-            <CollectionView ItemsSource="{Binding myChampionList}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Champions">
-                        <Grid>
-                            <Border>
-                                <Grid BackgroundColor="Grey" Padding="5">
-                                    <!--<Image  Aspect="AspectFill"
-                                            HeightRequest="100"
-                                            WidthRequest="100" 
-                                            Grid.Column="0"
-                                            Source="{Binding Image}"/>-->
-                                    <Label Text="{Binding Name}" />
-                                </Grid>
-                            </Border>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </Grid>
+        <FlexLayout BindableLayout.ItemsSource="{Binding myChampionList}"
+                    Wrap="Wrap"
+                    JustifyContent="SpaceAround">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate x:DataType="model:Champions">
+                    <Frame HeightRequest="300" WidthRequest="300" BorderColor="Transparent" BackgroundColor="Transparent">
+                        <VerticalStackLayout>
+                            <Image HeightRequest="230"
+                                    WidthRequest="280"
+                                    Aspect="Fill"
+                                    Source="{Binding Image}"
+                                    HorizontalOptions="Center"/>
+                            <Label HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" Text="{Binding Name}"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
     </ScrollView>
 </ContentPage>

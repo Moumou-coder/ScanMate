@@ -23,12 +23,13 @@
                             <Border>
                                 <Grid BackgroundColor="WhiteSmoke" ColumnDefinitions="*,*,*,*" Padding="5">
                                     <Image  Aspect="AspectFill"
-                                            HeightRequest="100"
-                                            WidthRequest="100" 
+                                            HeightRequest="150"
+                                            WidthRequest="250" 
                                             Grid.Column="0"
                                             VerticalOptions="Center"
                                             HorizontalOptions="Center"
-                                            Source="{Binding Image}"/>
+                                            Source="{Binding Image}"
+                                            Margin="10"/>
                                     <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Text="{Binding ChampionName}" TextColor="Black"/>
                                     <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" Text="{Binding Name}" TextColor="Black"/>
                                     <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="3" Text="{Binding Price, StringFormat='{0} coins'}" TextColor="Black"/>
@@ -40,8 +41,8 @@
             </Grid>
         </ScrollView>
     </ContentPage>
-
-    <ContentPage Title="Add Skin">
+    
+    <ContentPage Title="Add New Skin">
         <Frame BackgroundColor="Gray" 
                VerticalOptions="CenterAndExpand"
                HeightRequest="470"
@@ -82,4 +83,5 @@
             </VerticalStackLayout>
         </Frame>
     </ContentPage>
+    
 </TabbedPage>
