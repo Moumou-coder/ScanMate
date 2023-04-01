@@ -1,36 +1,85 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ScanMate.View.SkinsPage"
              xmlns:model="clr-namespace:ScanMate.Model"
              xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
              x:DataType="viewmodel:SkinsViewModel"
-             Title="SkinsPage">
+             BarBackgroundColor="Purple"
+             BarTextColor="Aquamarine"
+             >
 
-    <ScrollView>
-        <Grid BackgroundColor="Transparent" ColumnDefinitions="*,*,*,*" RowDefinitions="Auto,*">
-            <Label Text="bala" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"/>
-            <CollectionView ItemsSource="{Binding mySkinList}" Grid.Row="1" Grid.ColumnSpan="4">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Skins">
-                        <Grid>
+    <ContentPage Title="List Of Skins">
+        <ScrollView>
+            <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="Auto,*" Margin="20">
+                <Label Text="Skin Image" Grid.Row="0" Grid.Column="0" FontSize="20" HorizontalOptions="Center"/>
+                <Label Text="Champion Name" Grid.Row="0" Grid.Column="1" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="Skin Name" Grid.Row="0" Grid.Column="2" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="Price" Grid.Row="0" Grid.Column="3" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+                <CollectionView ItemsSource="{Binding mySkinList}" Grid.Row="1" Grid.ColumnSpan="4">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Skins">
                             <Border>
-                                <Grid BackgroundColor="Grey" ColumnDefinitions="*,*,*,*" Padding="4">
+                                <Grid BackgroundColor="WhiteSmoke" ColumnDefinitions="*,*,*,*" Padding="5">
                                     <Image  Aspect="AspectFill"
                                             HeightRequest="100"
                                             WidthRequest="100" 
                                             Grid.Column="0"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Center"
                                             Source="{Binding Image}"/>
-                                    <Label VerticalOptions="Center" Grid.Column="1" Text="{Binding ChampionName}" />
-                                    <Label VerticalOptions="Center" Grid.Column="2" Text="{Binding Name}"/>
-                                    <Label VerticalOptions="Center" Grid.Column="3" Text="{Binding Price, StringFormat='{0} coins'}"/>
+                                    <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Text="{Binding ChampionName}" TextColor="Black"/>
+                                    <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" Text="{Binding Name}" TextColor="Black"/>
+                                    <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="3" Text="{Binding Price, StringFormat='{0} coins'}" TextColor="Black"/>
                                 </Grid>
                             </Border>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </Grid>
-    </ScrollView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </ScrollView>
+    </ContentPage>
 
-</ContentPage>
+    <ContentPage Title="Add Skin">
+        <Frame BackgroundColor="Gray" 
+               VerticalOptions="CenterAndExpand"
+               HeightRequest="470"
+               Margin="50"
+               >
+            <VerticalStackLayout Spacing="10">
+                <Label Text="NEW SKIN" FontSize="25" FontAttributes="Bold"/>
+
+                <Frame Padding="10" Margin="0,25,0,0" BorderColor="Transparent">
+                    <Grid ColumnDefinitions="160,*">
+                        <Label Text="URL Of Picture : " VerticalOptions="Center" Margin="10,10,30,10"/>
+                        <Entry Placeholder="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_2.jpg" Grid.Column="1" />
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="10" BorderColor="Transparent">
+                    <Grid ColumnDefinitions="160,*">
+                        <Label Text="Champion Name : " VerticalOptions="Center" Margin="10,10,30,10"/>
+                        <Entry Placeholder="Gnar" Grid.Column="1" />
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="10" BorderColor="Transparent">
+                    <Grid ColumnDefinitions="160,*">
+                        <Label Text="Skin Name : " VerticalOptions="Center" Margin="10,10,30,10"/>
+                        <Entry Placeholder="Gentleman Gnar" Grid.Column="1" />
+                    </Grid>
+                </Frame>
+
+                <Frame Padding="10" Margin="0,0,0,25" BorderColor="Transparent">
+                    <Grid ColumnDefinitions="160,*">
+                        <Label Text="Price : " VerticalOptions="Center" Margin="10,10,30,10"/>
+                        <Entry Placeholder="555" Grid.Column="1" />
+                    </Grid>
+                </Frame>
+
+                <Button Text="ADD" FontSize="20" FontAttributes="Bold"  WidthRequest="300" IsEnabled="{Binding IsAddEnable}"/>
+            </VerticalStackLayout>
+        </Frame>
+    </ContentPage>
+</TabbedPage>

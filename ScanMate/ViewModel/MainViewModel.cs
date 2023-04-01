@@ -5,7 +5,7 @@ public partial class MainViewModel : ObservableObject
     BarCodeService MyBarCodeService;
 
     [ObservableProperty]
-    string monTxt;
+    string myTitle = "League Of Legend V1.0";
 
     public MainViewModel()
     {
@@ -17,11 +17,8 @@ public partial class MainViewModel : ObservableObject
     private void SerialBuffer_Changed(object sender, EventArgs e)
     {
         BarCodeService.QueueBuffer myQueue = (BarCodeService.QueueBuffer)sender;
-        MonTxt = myQueue.Dequeue().ToString(); //ActiveTarget = nom du label a changer!!!!
+        string txt = myQueue.Dequeue().ToString(); //ActiveTarget = nom du label a changer!!!!
     }
-
-    [ObservableProperty]
-	string myTitle = "League Of Legend V1.0";
 
     [RelayCommand]
     public async Task GoToChampionsPage()

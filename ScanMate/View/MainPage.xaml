@@ -30,7 +30,6 @@
             Text="Welcome ** Name Of User ** on ScanMate of LeagueOfLegend ! "
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Label Text="{Binding MonTxt}" />
     </VerticalStackLayout>
 
 </ContentPage>
