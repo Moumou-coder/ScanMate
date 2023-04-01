@@ -2,8 +2,12 @@ namespace ScanMate.ViewModel;
 
 public partial class SkinsViewModel : ObservableObject
 {
+    [ObservableProperty]
+    bool isAddEnable = true;
+
     public SkinsService skinsService;
     public ObservableCollection<Skins> mySkinList { get; } = new();
+    
 
     public SkinsViewModel(SkinsService mySkins)
     {

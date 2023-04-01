@@ -1,6 +1,6 @@
 namespace ScanMate.View;
 
-public partial class SkinsPage : ContentPage
+public partial class SkinsPage : TabbedPage
 {
     private readonly SkinsViewModel viewModel;
 
