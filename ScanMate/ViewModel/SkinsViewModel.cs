@@ -47,7 +47,7 @@ public partial class SkinsViewModel : ObservableObject
 
         if (!allEntriesValid)
         {
-            await Shell.Current.DisplayAlert("Attention : ", "Veuillez complétez tous les champs svp ! ", "OK");
+            await Shell.Current.DisplayAlert("Attention : ", "Veuillez complÃ©tez tous les champs svp ! ", "OK");
         }
 
         await UpdateJSONWithNewSkin();
@@ -61,7 +61,6 @@ public partial class SkinsViewModel : ObservableObject
         // Update the JSON file
         try
         {
-            mySkinList.Clear();
             await skinsService.AddSkin(newSkin);
             mySkinList.Add(newSkin);    
         }
