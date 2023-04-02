@@ -11,6 +11,7 @@ global using System.Collections.ObjectModel;
 global using System.IO.Ports;
 global using System.Management;
 global using System.Collections;
+global using System.Xml;
 
 internal class Globals
 {
