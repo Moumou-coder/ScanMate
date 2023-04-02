@@ -6,7 +6,7 @@ public partial class SkinsPage : TabbedPage
 
 	public SkinsPage(SkinsViewModel viewModel)
 	{
-		InitializeComponent();
+        InitializeComponent();
         this.viewModel = viewModel;
         BindingContext = viewModel;
 

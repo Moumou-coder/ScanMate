@@ -80,7 +80,7 @@
                     </Grid>
                 </Frame>
 
-                <Button Text="ADD" FontSize="20" FontAttributes="Bold"  WidthRequest="300" Command="{Binding CheckEntriesValueCommand}" IsEnabled="{Binding IsAddButtonEnabled}"/>
+                <Button Text="ADD" FontSize="20" FontAttributes="Bold"  WidthRequest="300" Command="{Binding CheckEntriesValueCommand}"/>
             </VerticalStackLayout>
         </Frame>
     </ContentPage>
