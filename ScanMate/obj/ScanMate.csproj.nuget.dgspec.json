@@ -94,6 +94,10 @@
               "version": "[7.0.59, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.2.23128.3, )"
@@ -224,6 +228,10 @@
               "version": "[7.0.59, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "System.IO.Ports": {
               "target": "Package",
               "version": "[8.0.0-preview.2.23128.3, )"
@@ -298,6 +306,10 @@
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "System.IO.Ports": {
               "target": "Package",
@@ -390,6 +402,10 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "System.IO.Ports": {
               "target": "Package",

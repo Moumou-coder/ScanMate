@@ -15,5 +15,6 @@ public class SkinsService : ContentPage
 
         return skinsList;
     }
+
 }
 

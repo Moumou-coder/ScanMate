@@ -55,32 +55,32 @@
                 <Frame Padding="10" Margin="0,25,0,0" BorderColor="Transparent">
                     <Grid ColumnDefinitions="160,*">
                         <Label Text="URL Of Picture : " VerticalOptions="Center" Margin="10,10,30,10"/>
-                        <Entry Placeholder="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_2.jpg" Grid.Column="1" />
+                        <Entry Placeholder="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_2.jpg" Grid.Column="1" Text="{Binding Url}"/>
                     </Grid>
                 </Frame>
 
                 <Frame Padding="10" BorderColor="Transparent">
                     <Grid ColumnDefinitions="160,*">
                         <Label Text="Champion Name : " VerticalOptions="Center" Margin="10,10,30,10"/>
-                        <Entry Placeholder="Gnar" Grid.Column="1" />
+                        <Entry Placeholder="Gnar" Grid.Column="1" Text="{Binding ChampionName}"/>
                     </Grid>
                 </Frame>
 
                 <Frame Padding="10" BorderColor="Transparent">
                     <Grid ColumnDefinitions="160,*">
                         <Label Text="Skin Name : " VerticalOptions="Center" Margin="10,10,30,10"/>
-                        <Entry Placeholder="Gentleman Gnar" Grid.Column="1" />
+                        <Entry Placeholder="Gentleman Gnar" Grid.Column="1" Text="{Binding SkinName}"/>
                     </Grid>
                 </Frame>
 
                 <Frame Padding="10" Margin="0,0,0,25" BorderColor="Transparent">
                     <Grid ColumnDefinitions="160,*">
                         <Label Text="Price : " VerticalOptions="Center" Margin="10,10,30,10"/>
-                        <Entry Placeholder="555" Grid.Column="1" />
+                        <Entry Placeholder="555" Grid.Column="1" Text="{Binding SkinPrice}"/>
                     </Grid>
                 </Frame>
 
-                <Button Text="ADD" FontSize="20" FontAttributes="Bold"  WidthRequest="300" IsEnabled="{Binding IsAddEnable}"/>
+                <Button Text="ADD" FontSize="20" FontAttributes="Bold"  WidthRequest="300" Command="{Binding CheckEntriesValueCommand}" IsEnabled="{Binding IsAddButtonEnabled}"/>
             </VerticalStackLayout>
         </Frame>
     </ContentPage>
