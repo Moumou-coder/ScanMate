@@ -2,6 +2,7 @@
 <TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ScanMate.View.SkinsPage"
+             xmlns:local="clr-namespace:ScanMate"
              xmlns:model="clr-namespace:ScanMate.Model"
              xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
              x:DataType="viewmodel:SkinsViewModel"
@@ -41,7 +42,7 @@
             </Grid>
         </ScrollView>
     </ContentPage>
-    
+
     <ContentPage Title="Add New Skin">
         <Frame BackgroundColor="Gray" 
                VerticalOptions="CenterAndExpand"
@@ -83,5 +84,5 @@
             </VerticalStackLayout>
         </Frame>
     </ContentPage>
-    
+
 </TabbedPage>

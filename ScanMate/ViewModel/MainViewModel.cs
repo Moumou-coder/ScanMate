@@ -29,6 +29,6 @@ public partial class MainViewModel : ObservableObject
     [RelayCommand]
     public async Task GoToSkinsPage()
     {
-        await Shell.Current.GoToAsync(nameof(SkinsPage));
+            await Shell.Current.GoToAsync(nameof(SkinsPage));
     }
 }

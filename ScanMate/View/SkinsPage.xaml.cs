@@ -22,4 +22,17 @@ public partial class SkinsPage : TabbedPage
     {
         base.OnNavigatedTo(args);
     }
+
+    protected override bool OnBackButtonPressed()
+    {
+        // If the current page is the second content page (AddNewSkin), 
+        // switch to the first content page before navigating back.
+        if (CurrentPage == Children[1])
+        {
+            CurrentPage = Children[0];
+            return true;
+        }
+
+        return base.OnBackButtonPressed();
+    }
 }
