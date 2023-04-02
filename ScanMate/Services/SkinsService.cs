@@ -34,7 +34,7 @@ public class SkinsService : ContentPage
         var updatedJsonString = JsonSerializer.Serialize(skinsList);
 
         // Write the file content to the app data directory
-        string targetFile = Path.Combine(FileSystem.Current.AppDataDirectory, "C:\\Users\\Moumou\\Desktop\\C# Q4\\ScanMate\\ScanMate\\Resources\\Raw\\skinsdata.json");
+        string targetFile = Path.Combine(FileSystem.Current.AppDataDirectory, "skinsdata.json");
         using FileStream outputStream = File.OpenWrite(targetFile);
         using StreamWriter streamWriter = new(outputStream);
         await streamWriter.WriteAsync(updatedJsonString);
