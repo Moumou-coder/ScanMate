@@ -6,6 +6,8 @@ public partial class MainViewModel : ObservableObject
 
     [ObservableProperty]
     string myTitle = "League Of Legend V1.0";
+    [ObservableProperty]
+    string myID ="Mister M";
 
     public MainViewModel()
     {
@@ -17,7 +19,7 @@ public partial class MainViewModel : ObservableObject
     private void SerialBuffer_Changed(object sender, EventArgs e)
     {
         BarCodeService.QueueBuffer myQueue = (BarCodeService.QueueBuffer)sender;
-        string txt = myQueue.Dequeue().ToString(); //ActiveTarget = nom du label a changer!!!!
+        MyID = myQueue.Dequeue().ToString(); //ActiveTarget = nom du label a changer!!!!
     }
 
     [RelayCommand]
