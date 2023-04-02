@@ -26,10 +26,11 @@
     </ContentPage.MenuBarItems>
 
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome ** Name Of User ** on ScanMate of LeagueOfLegend ! "
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label
+            Text="{Binding MyID, StringFormat='Welcome {0}, on ScanMate of LeagueOfLegend!'}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Margin="200" />
     </VerticalStackLayout>
 
 </ContentPage>
