@@ -29,6 +29,9 @@ public static class MauiProgram
         builder.Services.AddTransient<SkinsViewModel>();
         builder.Services.AddTransient<ChampionsService>();
 
+        builder.Services.AddTransient<ChampionDetailsPage>();
+        builder.Services.AddTransient<ChampionDetailsViewModel>();
+
         return builder.Build();
 	}
 }

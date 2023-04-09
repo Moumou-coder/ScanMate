@@ -26,4 +26,15 @@ public partial class ChampionsViewModel : ObservableObject
 
     }
 
+    [RelayCommand]
+    async Task GoToDetailsAsync(Champions champion)
+    {
+        if (champion is null) return;
+
+        await Shell.Current.GoToAsync($"{nameof(ChampionDetailsPage)}", true, new Dictionary<string, object>
+        {
+            {"Champion", champion}
+        });
+    }
+
 }
