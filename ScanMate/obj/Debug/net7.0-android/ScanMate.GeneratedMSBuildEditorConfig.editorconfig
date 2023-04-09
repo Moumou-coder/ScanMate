@@ -38,6 +38,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.Resources.Styles.
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/View/ChampionDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.View.ChampionDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ChampionDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ChampionDetailsPage.xaml
+
 [C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/View/ChampionsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.View.ChampionsPage.xaml

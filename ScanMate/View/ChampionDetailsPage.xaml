@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScanMate.View.ChampionDetailsPage"
+             xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
+             x:DataType="viewmodel:ChampionDetailsViewModel">
+
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="{Binding Champion.Title}"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   FontAttributes="Bold,Italic" 
+                   FontSize="30" 
+                   TextColor="Purple"/>
+        </Grid>
+    </Shell.TitleView>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid ColumnDefinitions="*, Auto, *" RowDefinitions="150, Auto">
+                <BoxView BackgroundColor="Gray" 
+                         Grid.ColumnSpan="3" 
+                         HeightRequest="150" 
+                         HorizontalOptions="FillAndExpand"/>
+
+                <Frame Grid.RowSpan="2"
+                       Grid.Column="1"
+                       HeightRequest="250"
+                       WidthRequest="250"
+                       CornerRadius="120"
+                       HorizontalOptions="Center"
+                       IsClippedToBounds="True"
+                       Padding="0"
+                       Margin="0,50,0,0">
+                    <Image Aspect="Fill"
+                           HeightRequest="250"
+                           WidthRequest="250"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Source="{Binding Champion.Image}"/>
+                </Frame>
+            </Grid>
+
+            <HorizontalStackLayout Spacing="50" Margin="50" HorizontalOptions="Center">
+                <Frame WidthRequest="150" Margin="10" BorderColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/4334/4334081.png" Aspect="AspectFill" Margin="0,0,30,0" HeightRequest="50" WidthRequest="50"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label Text="{Binding Champion.Attack, StringFormat='=      {0}'}"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame WidthRequest="150" Margin="10" BorderColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/929/929429.png" Aspect="AspectFill" Margin="0,0,30,0" HeightRequest="50" WidthRequest="50"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label Text="{Binding Champion.Defense, StringFormat='=      {0}'}"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame WidthRequest="150" Margin="10" BorderColor="Transparent">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="https://cdn-icons-png.flaticon.com/512/4039/4039199.png" Aspect="AspectFill" Margin="0,0,30,0" HeightRequest="50" WidthRequest="50"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Label Text="{Binding Champion.Magic, StringFormat='=      {0}'}"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
