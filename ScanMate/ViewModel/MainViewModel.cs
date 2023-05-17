@@ -1,6 +1,6 @@
 namespace ScanMate.ViewModel;
 
-public partial class MainViewModel : ObservableObject
+public partial class MainViewModel : BaseViewModel
 {
     public MainViewModel()
     {

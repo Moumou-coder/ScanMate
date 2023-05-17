@@ -1,7 +1,7 @@
 namespace ScanMate.ViewModel;
 
 
-public partial class ChampionsViewModel : ObservableObject
+public partial class ChampionsViewModel : BaseViewModel
 {
     public ChampionsService championsService;
     public ObservableCollection<Champions> myChampionList { get; } = new();
