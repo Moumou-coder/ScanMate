@@ -33,4 +33,10 @@ public partial class MainViewModel : ObservableObject
     {
             await Shell.Current.GoToAsync(nameof(SkinsPage));
     }
+
+    [RelayCommand]
+    public async Task GoToHomePage()
+    {
+        await Shell.Current.GoToAsync(nameof(HomePage));
+    }
 }

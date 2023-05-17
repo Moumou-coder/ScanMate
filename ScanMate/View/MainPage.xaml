@@ -31,6 +31,8 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Margin="200" />
+
+        <Button Text="Home" FontSize="20" FontAttributes="Bold"  WidthRequest="300" Command="{Binding GoToHomePageCommand}"/>
     </VerticalStackLayout>
 
 </ContentPage>
