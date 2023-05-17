@@ -624,7 +624,6 @@ C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.190
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.423.11508.dll
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -653,3 +652,7 @@ C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.190
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.CodeDom.dll
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Management.dll
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\attack.scale-100.png
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\defense.scale-100.png
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\magic.scale-100.png
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_7.0.523.17405.dll

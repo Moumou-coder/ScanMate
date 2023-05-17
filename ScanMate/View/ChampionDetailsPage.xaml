@@ -6,13 +6,14 @@
              x:DataType="viewmodel:ChampionDetailsViewModel">
 
     <Shell.TitleView>
-        <Grid>
+        <Grid ColumnDefinitions="*" BackgroundColor="Purple">
             <Label Text="{Binding Champion.Title}"
                    HorizontalOptions="Center" 
                    VerticalOptions="Center" 
+                   HorizontalTextAlignment="Center"
                    FontAttributes="Bold,Italic" 
                    FontSize="30" 
-                   TextColor="Purple"/>
+                   TextColor="Aquamarine"/>
         </Grid>
     </Shell.TitleView>
 
@@ -45,19 +46,19 @@
             <HorizontalStackLayout Spacing="50" Margin="50" HorizontalOptions="Center">
                 <Frame WidthRequest="150" Margin="10" BorderColor="Transparent">
                     <StackLayout Orientation="Horizontal">
-                        <Image Source="https://cdn-icons-png.flaticon.com/512/4334/4334081.png" Aspect="AspectFill" Margin="0,0,30,0" HeightRequest="50" WidthRequest="50"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Image Source="attack.png" Aspect="AspectFill" Margin="0,0,30,0" HeightRequest="50" WidthRequest="50"  HorizontalOptions="Center" VerticalOptions="Center"/>
                         <Label Text="{Binding Champion.Attack, StringFormat='=      {0}'}"  HorizontalOptions="Center" VerticalOptions="Center"/>
                     </StackLayout>
                 </Frame>
                 <Frame WidthRequest="150" Margin="10" BorderColor="Transparent">
                     <StackLayout Orientation="Horizontal">
-                        <Image Source="https://cdn-icons-png.flaticon.com/512/929/929429.png" Aspect="AspectFill" Margin="0,0,30,0" HeightRequest="50" WidthRequest="50"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Image Source="defense.png" Aspect="AspectFill" Margin="0,0,30,0" HeightRequest="50" WidthRequest="50"  HorizontalOptions="Center" VerticalOptions="Center"/>
                         <Label Text="{Binding Champion.Defense, StringFormat='=      {0}'}"  HorizontalOptions="Center" VerticalOptions="Center"/>
                     </StackLayout>
                 </Frame>
                 <Frame WidthRequest="150" Margin="10" BorderColor="Transparent">
                     <StackLayout Orientation="Horizontal">
-                        <Image Source="https://cdn-icons-png.flaticon.com/512/4039/4039199.png" Aspect="AspectFill" Margin="0,0,30,0" HeightRequest="50" WidthRequest="50"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <Image Source="magic.png" Aspect="AspectFill" Margin="0,0,30,0" HeightRequest="50" WidthRequest="50"  HorizontalOptions="Center" VerticalOptions="Center"/>
                         <Label Text="{Binding Champion.Magic, StringFormat='=      {0}'}"  HorizontalOptions="Center" VerticalOptions="Center"/>
                     </StackLayout>
                 </Frame>
