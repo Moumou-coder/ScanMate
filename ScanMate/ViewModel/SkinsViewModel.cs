@@ -1,6 +1,6 @@
 namespace ScanMate.ViewModel;
 
-public partial class SkinsViewModel : ObservableObject
+public partial class SkinsViewModel : BaseViewModel
 {
     
     [ObservableProperty]

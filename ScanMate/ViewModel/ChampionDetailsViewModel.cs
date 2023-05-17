@@ -1,7 +1,7 @@
 namespace ScanMate.ViewModel;
 
 [QueryProperty("Champion", "Champion")]
-public partial class ChampionDetailsViewModel : ObservableObject
+public partial class ChampionDetailsViewModel : BaseViewModel
 {
 
     [ObservableProperty]

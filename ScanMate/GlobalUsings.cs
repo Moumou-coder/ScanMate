@@ -12,6 +12,7 @@ global using System.IO.Ports;
 global using System.Management;
 global using System.Collections;
 global using System.Xml;
+global using System.Collections.Specialized;
 
 internal class Globals
 {

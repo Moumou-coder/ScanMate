@@ -1,6 +1,6 @@
 namespace ScanMate.ViewModel;
 
-public partial class HomeViewModel : ObservableObject
+public partial class HomeViewModel : BaseViewModel
 {
     BarCodeService MyBarCodeService;
 
