@@ -8,29 +8,11 @@
              x:Name="MyPage"
              >
 
-    <Shell.TitleView>
-        <Grid>
-            <Label Text="{Binding MyTitle}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="25" FontAttributes="Bold, Italic"/>
-        </Grid>
-    </Shell.TitleView>
-
-    <ContentPage.MenuBarItems>
-        <MenuBarItem Text="Characters" BindingContext="{Binding Path=BindingContext, Source={x:Reference MyPage}}">
-            <MenuFlyoutItem Text="Champions" 
-                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToChampionsPageCommand}"
-                            CommandParameter="From Champions!"/>
-            <MenuFlyoutItem Text="Skins" 
-                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToSkinsPageCommand}"
-                            CommandParameter="From Skins!"/>
-        </MenuBarItem>
-    </ContentPage.MenuBarItems>
-
     <VerticalStackLayout>
-        <Label
-            Text="{Binding MyID, StringFormat='Welcome {0}, on ScanMate of LeagueOfLegend!'}"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Margin="200" />
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
 
         <Button Text="Home" FontSize="20" FontAttributes="Bold"  WidthRequest="300" Command="{Binding GoToHomePageCommand}"/>
     </VerticalStackLayout>
