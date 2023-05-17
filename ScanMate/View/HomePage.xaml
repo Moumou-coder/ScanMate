@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScanMate.View.HomePage"
+             xmlns:local="clr-namespace:ScanMate"
+             xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
+             x:DataType="viewmodel:HomeViewModel"
+             x:Name="Home"
+             >
+
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="{Binding MyTitle}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="25" FontAttributes="Bold, Italic"/>
+        </Grid>
+    </Shell.TitleView>
+
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Characters" BindingContext="{Binding Path=BindingContext, Source={x:Reference Home}}">
+            <MenuFlyoutItem Text="Champions" 
+                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:HomeViewModel}}, Path=GoToChampionsPageCommand}"
+                            CommandParameter="From Champions!"/>
+            <MenuFlyoutItem Text="Skins" 
+                            Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:HomeViewModel}}, Path=GoToSkinsPageCommand}"
+                            CommandParameter="From Skins!"/>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+    <VerticalStackLayout>
+        <Label
+            Text="{Binding MyID, StringFormat='Welcome {0}, on ScanMate of LeagueOfLegend!'}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Margin="200" />
+    </VerticalStackLayout>
+    
+    
+</ContentPage>
