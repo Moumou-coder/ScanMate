@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-17T15:58:00.882</Modified>
+      <Modified>2023-05-19T09:47:37.696</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-17T15:58:00.444</Modified>
+      <Modified>2023-05-19T09:47:37.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ScanMate.runtimeconfig.json">
       <PackagePath>ScanMate.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ScanMate.dll">
       <PackagePath>ScanMate.dll</PackagePath>
-      <Modified>2023-05-17T15:57:59.124</Modified>
+      <Modified>2023-05-19T09:47:35.324</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ScanMate.exe</PackagePath>
-      <Modified>2023-05-17T15:57:59.131</Modified>
+      <Modified>2023-05-19T09:47:35.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -939,7 +939,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ScanMate.deps.json">
       <PackagePath>ScanMate.deps.json</PackagePath>
-      <Modified>2023-05-17T15:58:00.726</Modified>
+      <Modified>2023-05-19T09:47:37.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.81\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -956,14 +956,6 @@
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
       <Modified>2023-03-31T03:55:14.387</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\Resources\Raw\ChampionsData.json">
-      <PackagePath>ChampionsData.json</PackagePath>
-      <Modified>2023-04-02T15:01:22.581</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\Resources\Raw\skinsdata.json">
-      <PackagePath>skinsdata.json</PackagePath>
-      <Modified>2023-04-02T21:56:25.745</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
@@ -995,219 +987,231 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-05-17T13:13:49.316</Modified>
+      <Modified>2023-05-19T08:26:25.846</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.526</Modified>
+      <Modified>2023-05-19T08:26:26.334</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.575</Modified>
+      <Modified>2023-05-19T08:26:26.356</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.609</Modified>
+      <Modified>2023-05-19T08:26:26.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.670</Modified>
+      <Modified>2023-05-19T08:26:26.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.903</Modified>
+      <Modified>2023-05-19T08:26:26.510</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.792</Modified>
+      <Modified>2023-05-19T08:26:26.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.810</Modified>
+      <Modified>2023-05-19T08:26:26.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.881</Modified>
+      <Modified>2023-05-19T08:26:26.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.821</Modified>
+      <Modified>2023-05-19T08:26:26.059</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.834</Modified>
+      <Modified>2023-05-19T08:26:26.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.701</Modified>
+      <Modified>2023-05-19T08:26:25.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.709</Modified>
+      <Modified>2023-05-19T08:26:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.777</Modified>
+      <Modified>2023-05-19T08:26:26.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.741</Modified>
+      <Modified>2023-05-19T08:26:26.008</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.749</Modified>
+      <Modified>2023-05-19T08:26:26.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.364</Modified>
+      <Modified>2023-05-19T08:26:25.871</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.378</Modified>
+      <Modified>2023-05-19T08:26:25.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.392</Modified>
+      <Modified>2023-05-19T08:26:25.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.407</Modified>
+      <Modified>2023-05-19T08:26:25.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.421</Modified>
+      <Modified>2023-05-19T08:26:25.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.496</Modified>
+      <Modified>2023-05-19T08:26:25.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.533</Modified>
+      <Modified>2023-05-19T08:26:25.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.693</Modified>
+      <Modified>2023-05-19T08:26:25.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.559</Modified>
+      <Modified>2023-05-19T08:26:25.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.621</Modified>
+      <Modified>2023-05-19T08:26:25.948</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.079</Modified>
+      <Modified>2023-05-19T08:26:26.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.108</Modified>
+      <Modified>2023-05-19T08:26:26.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.135</Modified>
+      <Modified>2023-05-19T08:26:26.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.163</Modified>
+      <Modified>2023-05-19T08:26:26.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.213</Modified>
+      <Modified>2023-05-19T08:26:26.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.993</Modified>
+      <Modified>2023-05-19T08:26:26.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.002</Modified>
+      <Modified>2023-05-19T08:26:26.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.013</Modified>
+      <Modified>2023-05-19T08:26:26.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.024</Modified>
+      <Modified>2023-05-19T08:26:26.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.049</Modified>
+      <Modified>2023-05-19T08:26:26.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.890</Modified>
+      <Modified>2023-05-19T08:26:26.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.905</Modified>
+      <Modified>2023-05-19T08:26:26.093</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.915</Modified>
+      <Modified>2023-05-19T08:26:26.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.951</Modified>
+      <Modified>2023-05-19T08:26:26.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.983</Modified>
+      <Modified>2023-05-19T08:26:26.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.232</Modified>
+      <Modified>2023-05-19T08:26:26.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.276</Modified>
+      <Modified>2023-05-19T08:26:26.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.331</Modified>
+      <Modified>2023-05-19T08:26:26.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.381</Modified>
+      <Modified>2023-05-19T08:26:26.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-05-17T13:13:50.499</Modified>
+      <Modified>2023-05-19T08:26:26.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\attack.scale-100.png">
       <PackagePath>attack.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:02:45.312</Modified>
+      <Modified>2023-05-17T13:02:42.791</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\defense.scale-100.png">
       <PackagePath>defense.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:02:45.313</Modified>
+      <Modified>2023-05-17T13:02:42.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.207</Modified>
+      <Modified>2023-05-19T08:26:25.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.244</Modified>
+      <Modified>2023-05-19T08:26:25.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.289</Modified>
+      <Modified>2023-05-19T08:26:25.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.345</Modified>
+      <Modified>2023-05-19T08:26:25.951</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-05-17T13:13:49.543</Modified>
+      <Modified>2023-05-19T08:26:26.067</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\lol.scale-100.png">
+      <PackagePath>lol.scale-100.png</PackagePath>
+      <Modified>2023-05-17T16:51:23.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\magic.scale-100.png">
       <PackagePath>magic.scale-100.png</PackagePath>
-      <Modified>2023-05-17T13:02:45.314</Modified>
+      <Modified>2023-05-17T13:02:42.798</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pass.scale-100.png">
+      <PackagePath>pass.scale-100.png</PackagePath>
+      <Modified>2023-05-19T08:26:24.991</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\usericon.scale-100.png">
+      <PackagePath>usericon.scale-100.png</PackagePath>
+      <Modified>2023-05-19T08:08:41.185</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

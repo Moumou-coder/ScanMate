@@ -2,6 +2,11 @@ namespace ScanMate.ViewModel;
 
 public partial class MainViewModel : BaseViewModel
 {
+    [ObservableProperty]
+    public string userName;
+    [ObservableProperty] 
+    public string password;
+
     public MainViewModel()
     {
 
@@ -10,6 +15,17 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     public async Task GoToHomePage()
     {
-        await Shell.Current.GoToAsync(nameof(HomePage));
+        IsBusy = true;
+
+        try
+        {
+            await Shell.Current.GoToAsync(nameof(HomePage));
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Navigation", ex.Message, "OK");
+        }
+        
+        IsBusy = false;
     }
 }
