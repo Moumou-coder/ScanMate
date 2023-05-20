@@ -4,8 +4,7 @@
              x:Class="ScanMate.View.RegisterPage"
              xmlns:local="clr-namespace:ScanMate"
              xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
-             x:DataType="viewmodel:RegisterViewModel"
-             Title="RegisterPage">
+             x:DataType="viewmodel:RegisterViewModel">
 
 
     <Grid>

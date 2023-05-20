@@ -31,6 +31,10 @@
             VerticalOptions="Center"
             HorizontalOptions="Center"
             Margin="200" />
+        <Button Text="User Page" 
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToUserPageCommand}"/>
     </VerticalStackLayout>
     
     
