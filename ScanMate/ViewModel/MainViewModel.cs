@@ -1,3 +1,5 @@
+using ScanMate.View;
+
 namespace ScanMate.ViewModel;
 
 public partial class MainViewModel : BaseViewModel
@@ -28,4 +30,22 @@ public partial class MainViewModel : BaseViewModel
         
         IsBusy = false;
     }
+
+    [RelayCommand]
+    public async Task GoToRegisterPage()
+    {
+        IsBusy = true;
+
+        try
+        {
+            await Shell.Current.GoToAsync(nameof(RegisterPage));
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Navigation", ex.Message, "OK");
+        }
+
+        IsBusy = false;
+    }
+
 }

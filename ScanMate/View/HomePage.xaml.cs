@@ -1,6 +1,6 @@
 namespace ScanMate.View;
 
-public partial class HomePage : ContentPage
+public partial class  HomePage : ContentPage
 {
 	public HomePage(HomeViewModel viewModel)
 	{

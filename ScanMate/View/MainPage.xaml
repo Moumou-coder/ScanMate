@@ -25,8 +25,15 @@
                 <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
 
+           
             <Label Grid.Row="1" Text="Bienvenu sur LOL !" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
-            <Label Grid.Row="2" Text="S'identifier pour continuer" HorizontalOptions="Center" FontSize="Body"/>
+            <Label Grid.Row="2" Text="Cliquez ici pour vous inscrire" HorizontalOptions="Center" FontSize="Body">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoToRegisterPageCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Grid.Row="3" Text="S'identifier pour continuer" HorizontalOptions="Center" FontSize="Body"/>
+            
 
             <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="CenterAndExpand" WidthRequest="400">
                 <Frame BackgroundColor="Transparent" BorderColor="Purple" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
@@ -46,7 +53,8 @@
                     </StackLayout>
                 </Frame>
 
-                <Button Text="S'inscrire" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding GoToHomePageCommand}" IsEnabled="{Binding IsNotBusy}"/>
+                <Button Text="Se connecter" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding GoToHomePageCommand}" IsEnabled="{Binding IsNotBusy}"/>
+                
                 <!--<Button Text="S'inscrire" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding LoginCommand}"/>-->
 
             </StackLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScanMate.View.RegisterPage"
+             xmlns:local="clr-namespace:ScanMate"
+             xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
+             x:DataType="viewmodel:RegisterViewModel"
+             Title="RegisterPage">
+
+
+    <Grid>
+        <StackLayout>
+            <Frame BackgroundColor="Black" HeightRequest="100" WidthRequest="100" CornerRadius="50" Padding="0" Margin="0,50,0,0" HorizontalOptions="Center">
+                <Image Source="lol.png" Aspect="AspectFill" Margin="0"/>
+            </Frame>
+        </StackLayout>
+
+        <Grid RowSpacing="5" Grid.Row="1" Margin="20,20,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="1" Text="Bienvenue sur LOL !" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
+            <Label Grid.Row="2" Text="S'authentifier pour continuer" HorizontalOptions="Center" FontSize="Body"/>
+          
+
+            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="CenterAndExpand" WidthRequest="400">
+                <Frame BackgroundColor="Transparent" BorderColor="Purple" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="Aquamarine" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="usericon.png" Aspect="AspectFill" Margin="0" />
+                        </Frame>
+                        <Entry Text="{Binding UserName}" Placeholder="Nom d'utilisateur" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="Purple" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="Aquamarine" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="pass.png" Aspect="AspectFill" Margin="0" />
+                        </Frame>
+                        <Entry Text="{Binding FirstName}" Placeholder="Prénom" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="Purple" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="Aquamarine" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="pass.png" Aspect="AspectFill" Margin="0" />
+                        </Frame>
+                        <Entry Text="{Binding LastName}" Placeholder="Nom" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+               
+                <Frame BackgroundColor="Transparent" BorderColor="Purple" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="Aquamarine" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                            <Image Source="pass.png" Aspect="AspectFill" Margin="0" />
+                        </Frame>
+                        <Entry Text="{Binding Password}" Placeholder="Mot de passe" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    </StackLayout>
+                </Frame>
+
+                <Button Text="S'inscrire" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding GoToLoginPageCommand}" IsEnabled="{Binding IsNotBusy}"/>
+              
+                <!--<Button Text="S'inscrire" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding LoginCommand}"/>-->
+               
+
+            </StackLayout>
+        </Grid>
+    </Grid>
+
+</ContentPage>

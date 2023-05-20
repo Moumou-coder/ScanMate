@@ -12,57 +12,63 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = ScanMate
-build_property.ProjectDir = C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\
+build_property.ProjectDir = C:\Users\issam\Source\Repos\Moumou-coder\ScanMate\ScanMate\
 
-[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/App.xaml]
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/AppShell.xaml]
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/Resources/Styles/Colors.xaml]
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/Resources/Styles/Styles.xaml]
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/View/ChampionDetailsPage.xaml]
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/View/ChampionDetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.View.ChampionDetailsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\ChampionDetailsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\ChampionDetailsPage.xaml
 
-[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/View/ChampionsPage.xaml]
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/View/ChampionsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.View.ChampionsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\ChampionsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\ChampionsPage.xaml
 
-[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/View/HomePage.xaml]
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/View/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.View.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\HomePage.xaml
 
-[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/View/MainPage.xaml]
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/View/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.View.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\MainPage.xaml
 
-[C:/Users/Moumou/Desktop/C\# Q4/ScanMate/ScanMate/View/SkinsPage.xaml]
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/View/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.View.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\RegisterPage.xaml
+
+[C:/Users/issam/Source/Repos/Moumou-coder/ScanMate/ScanMate/View/SkinsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ScanMate.View.SkinsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\SkinsPage.xaml
