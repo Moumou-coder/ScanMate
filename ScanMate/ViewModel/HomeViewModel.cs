@@ -33,4 +33,10 @@ public partial class HomeViewModel : BaseViewModel
     {
         await Shell.Current.GoToAsync(nameof(SkinsPage));
     }
+
+    [RelayCommand]
+    public async Task GoToUserPage()
+    {
+        await Shell.Current.GoToAsync(nameof(UserPage));
+    }
 }
