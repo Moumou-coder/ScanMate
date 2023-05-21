@@ -34,6 +34,7 @@
                                     <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Text="{Binding ChampionName}" TextColor="Black"/>
                                     <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" Text="{Binding Name}" TextColor="Black"/>
                                     <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="3" Text="{Binding Price, StringFormat='{0} coins'}" TextColor="Black"/>
+                                    <Button Text="Delete" Grid.Column="4" Command="{Binding Source={RelativeSource AncestorType={x:Type TabbedPage}}, Path=BindingContext.DeleteSkinCommand}" CommandParameter="{Binding .}" BackgroundColor="Red" TextColor="White" WidthRequest="80" HorizontalOptions="End" Margin="10,0" />
                                 </Grid>
                             </Border>
                         </DataTemplate>

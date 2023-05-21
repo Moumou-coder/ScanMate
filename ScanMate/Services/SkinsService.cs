@@ -40,5 +40,21 @@ public class SkinsService : ContentPage
         return skinsList;
     }
 
+    public async Task<List<Skins>> DeleteSkin(Skins skin)
+    {
+        // Supprimer le skin de la liste
+        skinsList.Remove(skin);
+
+        // Serialize the updated list to a JSON string
+        var updatedJsonString = JsonSerializer.Serialize(skinsList);
+
+        // Write the file content to the app data directory
+        string targetFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ScanMateServer", "skinsdata.json");
+        await File.WriteAllTextAsync(targetFile, updatedJsonString);
+
+        return skinsList;
+    }
+
+
 }
 

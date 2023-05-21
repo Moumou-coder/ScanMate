@@ -15,6 +15,9 @@ public partial class MainViewModel : BaseViewModel
     [ObservableProperty]
     public bool loggedIn;
 
+    [ObservableProperty]
+    public static int userAccess; 
+
     UserManagementService MyDBService;
     public ObservableCollection<User> MyShownList { get; set; } = new();
 
@@ -40,6 +43,7 @@ public partial class MainViewModel : BaseViewModel
 
             if ( UserNameLogin == user.UserName &&  PasswordLogin == user.UserPassword)
             {
+                UserAccess = user.UserAccessType;
                 LoggedIn = true;
                 await Shell.Current.GoToAsync(nameof(HomePage), true);
                 return; 

@@ -24,6 +24,8 @@
                             CommandParameter="From Skins!"/>
         </MenuBarItem>
     </ContentPage.MenuBarItems>
+    
+    
 
     <VerticalStackLayout>
         <Label
