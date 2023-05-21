@@ -1353,3 +1353,9 @@ C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.190
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Windows.Extensions.dll
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\access.scale-100.png
 C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\fingerprint.scale-100.png
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bronze.scale-100.png
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\challenger.scale-100.png
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\diamond.scale-100.png
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\gold.scale-100.png
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\iron.scale-100.png
+C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\silver.scale-100.png
