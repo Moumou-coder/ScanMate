@@ -50,7 +50,6 @@
 
                 <Button Text="Se connecter" BackgroundColor="Aquamarine" TextColor="Purple" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding GoToHomePageCommand}" IsEnabled="{Binding IsNotBusy}"/>
 
-                <Button Text="S'inscrire" BackgroundColor="Aquamarine" TextColor="Purple" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding GoToRegisterPageCommand}" IsEnabled="{Binding IsNotBusy}"/>
 
             </StackLayout>
         </Grid>

@@ -25,23 +25,6 @@ public partial class RegisterViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    public async Task GoToLoginPage()
-    {
-        IsBusy = true;
-
-        try
-        {
-            await Shell.Current.GoToAsync("///MainPage");
-        }
-        catch (Exception ex)
-        {
-            await Shell.Current.DisplayAlert("Navigation", ex.Message, "OK");
-        }
-        
-        IsBusy = false;
-    }
-
-    [RelayCommand]
     internal async Task InsertAndGoToLogin()
     {
 

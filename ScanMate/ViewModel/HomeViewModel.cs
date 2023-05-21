@@ -22,11 +22,13 @@ public partial class HomeViewModel : BaseViewModel
     string tier = "?";
 
     ProfilService profilService;
+    public MainViewModel mainViewModel;
     ObservableCollection<Profil> myProfilList { get; set; } = new();
 
-    public HomeViewModel()
+    public HomeViewModel(MainViewModel mainViewModel)
     {
         profilService = new ProfilService();
+        this.mainViewModel = mainViewModel;
     }
 
     [RelayCommand]
@@ -90,6 +92,44 @@ public partial class HomeViewModel : BaseViewModel
         {
             await Shell.Current.DisplayAlert("Navigation : ", ex.Message, "OK");
         }
+    }
+
+    [RelayCommand]
+    public async Task GoToRegisterPage()
+    {
+        if (mainViewModel.UserAccess == 1)
+        {
+            try
+            {
+                await Shell.Current.GoToAsync(nameof(RegisterPage));
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Navigation : ", ex.Message, "OK");
+            }
+        }
+        else
+        {
+            await Shell.Current.DisplayAlert("Attention : ", "Vous n'avez pas les droits de créer un utilisateur", "OK");
+        }
+       
+    }
+
+    [RelayCommand]
+    public async Task GoToUsersPage()
+    {
+        if (mainViewModel.UserAccess == 1)
+        {
+            try
+            {
+                await Shell.Current.GoToAsync(nameof(UserPage));
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Navigation : ", ex.Message, "OK");
+            }
+        }
+            
     }
 
     [RelayCommand]
