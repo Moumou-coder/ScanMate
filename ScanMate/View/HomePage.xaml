@@ -25,17 +25,33 @@
         </MenuBarItem>
     </ContentPage.MenuBarItems>
 
-    <VerticalStackLayout>
-        <Label
-            Text="{Binding MyID, StringFormat='Welcome {0}, on ScanMate of LeagueOfLegend!'}"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Margin="200" />
-        <Button Text="User Page" 
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=GoToUserPageCommand}"/>
+    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Frame Grid.Row="0" Grid.RowSpan="3" CornerRadius="10" Padding="10" Margin="10" WidthRequest="250" BackgroundColor="SlateGray" BorderColor="Purple">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="{Binding UserName}" FontAttributes="Bold" FontSize="40"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="1" HeightRequest="100" WidthRequest="100" Padding="0" Margin="0,5,0,20">
+                    <Image Source="{Binding RankImage}" Aspect="AspectFill" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="{Binding TotalChampions, StringFormat='Total of Champions : {0}'}" />
+                    <Label Text="{Binding Position, StringFormat='Position : {0}'}" />
+                    <Label Text="{Binding Tier, StringFormat='TierList : {0}'}" />
+                </StackLayout>
+            </Grid>
+        </Frame>
+
+        <Button Text="Scanner" BackgroundColor="Purple" TextColor="white" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding ScannerCommand}" IsEnabled="{Binding IsNotBusy}" />
     </VerticalStackLayout>
-    
-    
+
+
 </ContentPage>

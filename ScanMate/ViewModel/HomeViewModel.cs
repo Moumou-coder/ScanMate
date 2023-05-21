@@ -1,3 +1,5 @@
+﻿using System.Linq.Expressions;
+
 namespace ScanMate.ViewModel;
 
 public partial class HomeViewModel : BaseViewModel
@@ -7,10 +9,65 @@ public partial class HomeViewModel : BaseViewModel
     [ObservableProperty]
     string myTitle = "League Of Legend V1.0";
     [ObservableProperty]
-    string myID = "Mister M";
+    string myID = "48684";
+    [ObservableProperty]
+    string userName = "Unknown";
+    [ObservableProperty]
+    string totalChampions = "0";
+    [ObservableProperty]
+    string position = "?";
+    [ObservableProperty]
+    string rankImage = "lol.png";
+    [ObservableProperty]
+    string tier = "?";
+
+    ProfilService profilService;
+    ObservableCollection<Profil> myProfilList { get; set; } = new();
 
     public HomeViewModel()
-	{
+    {
+        profilService = new ProfilService();
+    }
+
+    [RelayCommand]
+    public async Task Scanner()
+    {
+        IsBusy = true;
+        InitBarCodeService();
+
+        try
+        {
+            Globals.StaticListProfil = await profilService.GetProfilData();
+            foreach (Profil profil in Globals.StaticListProfil) { myProfilList.Add(profil); }
+            // Find the matching profile based on MyID
+            Profil matchingProfile = myProfilList.FirstOrDefault(profile => profile.Profil_ID == MyID);
+
+            if (matchingProfile != null)
+            {
+                // Fetch the attributes from the matching profile
+                UserName = matchingProfile.UserName;
+                TotalChampions = matchingProfile.ChampionsAmount;
+                Tier = matchingProfile.TierList;
+                Position = matchingProfile.Position;
+                RankImage = matchingProfile.Rank;
+
+                //await Shell.Current.DisplayAlert("Profil", "trouv� ", "OK");
+            }
+            else
+            {
+                await Shell.Current.DisplayAlert("Profil", "user not founded ", "OK");
+            }
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Scanner : ", ex.Message, "OK");
+        }
+
+        IsBusy = false;
+    }
+
+    internal void InitBarCodeService()
+    {
         this.MyBarCodeService = new BarCodeService();
         MyBarCodeService.ConfigureScanner();
         MyBarCodeService.SerialBuffer.Changed += SerialBuffer_Changed;
@@ -19,24 +76,38 @@ public partial class HomeViewModel : BaseViewModel
     private void SerialBuffer_Changed(object sender, EventArgs e)
     {
         BarCodeService.QueueBuffer myQueue = (BarCodeService.QueueBuffer)sender;
-        MyID = myQueue.Dequeue().ToString(); //ActiveTarget = nom du label a changer!!!!
+        MyID = myQueue.Dequeue().ToString(); //ActiveTarget
     }
 
     [RelayCommand]
     public async Task GoToChampionsPage()
     {
-        await Shell.Current.GoToAsync(nameof(ChampionsPage));
+        try
+        {
+            await Shell.Current.GoToAsync(nameof(ChampionsPage));
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Navigation : ", ex.Message, "OK");
+        }
     }
 
     [RelayCommand]
     public async Task GoToSkinsPage()
     {
-        await Shell.Current.GoToAsync(nameof(SkinsPage));
+        try
+        {
+            await Shell.Current.GoToAsync(nameof(SkinsPage));
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Navigation : ", ex.Message, "OK");
+        }
     }
 
-    [RelayCommand]
-    public async Task GoToUserPage()
-    {
-        await Shell.Current.GoToAsync(nameof(UserPage));
-    }
+    //[RelayCommand]
+    //public async Task GoToUserPage()
+    //{
+    //    await Shell.Current.GoToAsync(nameof(UserPage));
+    //}
 }

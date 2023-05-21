@@ -40,6 +40,7 @@ public partial class SkinsViewModel : BaseViewModel
     [RelayCommand]
     public async Task CheckEntriesValue()
     {
+        IsBusy = true;
         bool allEntriesValid = !string.IsNullOrEmpty(Url) &&
                                !string.IsNullOrEmpty(ChampionName) &&
                                !string.IsNullOrEmpty(SkinName) &&
@@ -53,6 +54,7 @@ public partial class SkinsViewModel : BaseViewModel
         
 
         await UpdateJSONWithNewSkin();
+        IsBusy = false;
     }
 
     public async Task UpdateJSONWithNewSkin()
