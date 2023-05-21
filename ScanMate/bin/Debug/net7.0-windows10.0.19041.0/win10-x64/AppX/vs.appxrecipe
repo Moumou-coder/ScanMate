@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-21T17:13:12.554</Modified>
+      <Modified>2023-05-21T19:34:10.489</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-21T17:13:12.073</Modified>
+      <Modified>2023-05-21T19:34:10.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ScanMate.runtimeconfig.json">
       <PackagePath>ScanMate.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ScanMate.dll">
       <PackagePath>ScanMate.dll</PackagePath>
-      <Modified>2023-05-21T17:13:10.290</Modified>
+      <Modified>2023-05-21T19:34:08.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ScanMate.exe</PackagePath>
-      <Modified>2023-05-21T17:13:10.303</Modified>
+      <Modified>2023-05-21T19:34:08.637</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -979,7 +979,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ScanMate.deps.json">
       <PackagePath>ScanMate.deps.json</PackagePath>
-      <Modified>2023-05-21T17:13:12.380</Modified>
+      <Modified>2023-05-21T19:34:10.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.81\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

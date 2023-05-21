@@ -9,7 +9,17 @@ public partial class HomeViewModel : BaseViewModel
     [ObservableProperty]
     string myTitle = "League Of Legend V1.0";
     [ObservableProperty]
-    string myID = "17254";
+    string myID = "48684";
+    [ObservableProperty]
+    string userName="Unknown";
+    [ObservableProperty]
+    string totalChampions="0";
+    [ObservableProperty]
+    string position="?";
+    [ObservableProperty]
+    string rankImage="lol.png";
+    [ObservableProperty]
+    string tier = "?";
 
     ProfilService profilService;
     ObservableCollection<Profil> myProfilList { get; set; } = new();
@@ -34,14 +44,21 @@ public partial class HomeViewModel : BaseViewModel
 
             if (matchingProfile != null)
             {
-                await Shell.Current.DisplayAlert("Profil", "trouvé ", "OK");
+                // Fetch the attributes from the matching profile
+                UserName = matchingProfile.UserName;
+                TotalChampions = matchingProfile.ChampionsAmount;
+                Tier = matchingProfile.TierList;
+                Position = matchingProfile.Position;
+                RankImage = matchingProfile.Rank;
+
+                //await Shell.Current.DisplayAlert("Profil", "trouvé ", "OK");
             }
             else
             {
                 await Shell.Current.DisplayAlert("Profil", "pas trouvé ", "OK");
             }
         }
-        catch (Exception ex) 
+        catch (Exception ex)
         {
             await Shell.Current.DisplayAlert("Scanner : ", ex.Message, "OK");
         }
