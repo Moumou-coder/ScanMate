@@ -82,21 +82,5 @@ public partial class MainViewModel : BaseViewModel
         }
     }
 
-    [RelayCommand]
-    public async Task GoToRegisterPage()
-    {
-        IsBusy = true;
-
-        try
-        {
-            await Shell.Current.GoToAsync(nameof(RegisterPage));
-        }
-        catch (Exception ex)
-        {
-            await Shell.Current.DisplayAlert("Navigation", ex.Message, "OK");
-        }
-
-        IsBusy = false;
-    }
 
 }

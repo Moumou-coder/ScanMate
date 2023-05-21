@@ -15,29 +15,6 @@ public partial class UserViewModel : BaseViewModel
         MyDBService.ConfigTools();
     }
 
-    [RelayCommand]
-    internal async Task FillAccessTable()
-    {
-        IsBusy = true;
-
-        Globals.UserSet.Tables["Users"].Clear();
-        Globals.UserSet.Tables["Access"].Clear();
-
-        try
-        {
-            await MyDBService.ReadAccessTable();
-            await MyDBService.ReadUserTable();
-
-            await MyDBService.FillUser();
-            await MoveIntoList();
-        }
-        catch (Exception ex)
-        {
-            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
-        }
-
-        IsBusy = false;
-    }
 
     [RelayCommand]
     internal async Task FillUserTable()
@@ -55,46 +32,12 @@ public partial class UserViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    internal async Task UpdateTable()
+    internal async Task DeleteUser()
     {
-        IsBusy = true;
-
-        DataRow User1 = Globals.UserSet.Tables["Users"].NewRow();
-        User1[1] = "aaeztza";
-        User1[2] = "aaa";
-        User1[3] = 1;
-
-        DataRow User2 = Globals.UserSet.Tables["Users"].NewRow();
-        User2[1] = "bbgsdgs";
-        User2[2] = "bbb";
-        User2[3] = 2;
-
-        Globals.UserSet.Tables["Users"].Rows.Add(User1);
-        Globals.UserSet.Tables["Users"].Rows.Add(User2);
-
-        await MyDBService.UpdateUser();
-
+        await MyDBService.DeleteUser("Zoniof");
         await MoveIntoList();
-
-        IsBusy = false;
     }
 
-    [RelayCommand]
-    internal async Task InsertDB()
-    {
-        IsBusy = true;
-        await MyDBService.InsertUser("Fred", "abab", 1);
-        await MoveIntoList();
-        IsBusy = false;
-    }
-    [RelayCommand]
-    internal async Task DeleteDB()
-    {
-        IsBusy = true;
-        await MyDBService.DeleteUser("Fred");
-        await MoveIntoList();
-        IsBusy = false;
-    }
 
     internal async Task MoveIntoList()
     {

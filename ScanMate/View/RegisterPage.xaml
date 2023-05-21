@@ -57,9 +57,6 @@
 
                 <Button Text="S'inscrire" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding InsertAndGoToLoginCommand}" IsEnabled="{Binding IsNotBusy}"/>
 
-                <Button Text="Se connecter" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding GoToLoginPageCommand}" IsEnabled="{Binding IsNotBusy}"/>
-               
-
             </StackLayout>
         </Grid>
     </Grid>
