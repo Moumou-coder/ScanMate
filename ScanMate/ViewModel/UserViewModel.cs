@@ -2,7 +2,7 @@
 
 namespace ScanMate.ViewModel;
 
-public partial class UserViewModel : ObservableObject
+public partial class UserViewModel : BaseViewModel
 {
     [ObservableProperty]
     bool isNotBusy = true;
@@ -89,6 +89,7 @@ public partial class UserViewModel : ObservableObject
         await MoveIntoList();
         IsNotBusy = true;
     }
+
     [RelayCommand]
     internal async Task DeleteDB()
     {

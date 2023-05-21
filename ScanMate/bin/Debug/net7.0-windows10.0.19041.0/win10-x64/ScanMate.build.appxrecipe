@@ -643,6 +643,9 @@
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\7.0.81\lib\net7.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.win32.systemevents\7.0.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
     </AppxPackagedFile>
@@ -691,11 +694,38 @@
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.codedom\7.0.0\lib\net7.0\System.CodeDom.dll">
       <PackagePath>System.CodeDom.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.configuration.configurationmanager\7.0.0\lib\net7.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.data.oledb\7.0.0\runtimes\win\lib\net7.0\System.Data.OleDb.dll">
+      <PackagePath>System.Data.OleDb.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.diagnostics.eventlog\7.0.0\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.Messages.dll">
+      <PackagePath>System.Diagnostics.EventLog.Messages.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.diagnostics.eventlog\7.0.0\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll">
+      <PackagePath>System.Diagnostics.EventLog.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.diagnostics.performancecounter\7.0.0\runtimes\win\lib\net7.0\System.Diagnostics.PerformanceCounter.dll">
+      <PackagePath>System.Diagnostics.PerformanceCounter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.drawing.common\7.0.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.io.ports\8.0.0-preview.2.23128.3\runtimes\win\lib\net7.0\System.IO.Ports.dll">
       <PackagePath>System.IO.Ports.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.management\7.0.0\runtimes\win\lib\net7.0\System.Management.dll">
       <PackagePath>System.Management.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.security.cryptography.protecteddata\7.0.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.security.permissions\7.0.0\lib\net7.0\System.Security.Permissions.dll">
+      <PackagePath>System.Security.Permissions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.windows.extensions\7.0.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll">
+      <PackagePath>System.Windows.Extensions.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.graphics.win2d\1.0.4\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>

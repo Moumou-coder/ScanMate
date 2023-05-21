@@ -8,9 +8,8 @@ public partial class UserManagementService
     internal void ConfigTools()
     {
         //Establish the connection
-        Connexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.16.0;"
-                                    + "Data Source=" + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ScanMateServer", "UserAccounts.accdb")
-                                    + ";Persist Security Info=False";
+        string databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ScanMateServer", "userAccounts.accdb");
+        Connexion.ConnectionString = "Provider=Microsoft.ACE.OLEDB.16.0;Data Source=" + databasePath + ";Persist Security Info=False";
 
         //Create commands
         string Insert_CommandText = "INSERT INTO DB_Users(UserName,UserPassword,UserAccessType) VALUES (@UserName,@UserPassword,@UserAccessType);";
@@ -39,36 +38,37 @@ public partial class UserManagementService
         Users_Adapter.UpdateCommand.Parameters.Add("@UserPassword", OleDbType.VarChar, 40, "UserPassword");
         Users_Adapter.UpdateCommand.Parameters.Add("@UserAccessType", OleDbType.Numeric, 100, "UserAccessType");
     }
+
     public async Task ReadAccessTable()
     {
-        OleDbCommand SelectCommand = new OleDbCommand("SELECT * FROM DB_Access ORDER BY Access_ID;", Connexion);
         try
         {
             Connexion.Open();
 
-            OleDbDataReader oleDbDataReader = SelectCommand.ExecuteReader();
+            OleDbCommand selectCommand = new OleDbCommand("SELECT * FROM DB_Access ORDER BY Access_ID;", Connexion);
+            OleDbDataReader dataReader = selectCommand.ExecuteReader();
 
-            if (oleDbDataReader.HasRows)
-            {
-                while (oleDbDataReader.Read())
-                {
-                    Globals.UserSet.Tables["Access"].Rows.Add(new object[] { oleDbDataReader[0], oleDbDataReader[1], oleDbDataReader[2], oleDbDataReader[3], oleDbDataReader[4], oleDbDataReader[5] });
-                }
-            }
+            if (Globals.UserSet.Tables.Contains("Access"))
+                Globals.UserSet.Tables["Access"].Clear();
+            else
+                Globals.UserSet.Tables.Add("Access");
 
-            oleDbDataReader.Close();
+            DataTable accessTable = Globals.UserSet.Tables["Access"];
 
+            accessTable.Load(dataReader);
+
+            dataReader.Close();
         }
         catch (Exception ex)
         {
-
-            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
+            await Shell.Current.DisplayAlert("ReadAccessTable", ex.Message, "OK");
         }
         finally
         {
             Connexion.Close();
         }
     }
+
 
     public async Task ReadUserTable()
     {
@@ -93,7 +93,7 @@ public partial class UserManagementService
         catch (Exception ex)
         {
 
-            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
+            await Shell.Current.DisplayAlert("ReadUserTable", ex.Message, "OK");
         }
         finally
         {
@@ -117,7 +117,7 @@ public partial class UserManagementService
         catch (Exception ex)
         {
 
-            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
+            await Shell.Current.DisplayAlert("FillUser", ex.Message, "OK");
         }
         finally
         {
@@ -149,7 +149,7 @@ public partial class UserManagementService
         catch (Exception ex)
         {
 
-            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
+            await Shell.Current.DisplayAlert("InsertUser", ex.Message, "OK");
         }
         finally
         {
@@ -167,11 +167,11 @@ public partial class UserManagementService
 
             if (Users_Adapter.DeleteCommand.ExecuteNonQuery() != 0)
             {
-                await Shell.Current.DisplayAlert("Database", "User supprim�", "OK");
+                await Shell.Current.DisplayAlert("DeleteUser", "User supprime", "OK");
             }
             else
             {
-                await Shell.Current.DisplayAlert("Database", "User non supprim�", "OK");
+                await Shell.Current.DisplayAlert("DeleteUser", "User non supprime", "OK");
 
             }
 
@@ -180,7 +180,7 @@ public partial class UserManagementService
         catch (Exception ex)
         {
 
-            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
+            await Shell.Current.DisplayAlert("DeleteUser", ex.Message, "OK");
         }
         finally
         {
@@ -200,7 +200,7 @@ public partial class UserManagementService
         catch (Exception ex)
         {
 
-            await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
+            await Shell.Current.DisplayAlert("UpdateUser", ex.Message, "OK");
         }
         finally
         {

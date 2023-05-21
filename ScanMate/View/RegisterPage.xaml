@@ -14,19 +14,14 @@
             </Frame>
         </StackLayout>
 
-        <Grid RowSpacing="5" Grid.Row="1" Margin="20,20,20,0">
+        <Grid RowSpacing="4" Grid.Row="1" Margin="20,20,20,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-
-            <Label Grid.Row="1" Text="Bienvenue sur LOL !" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
-            <Label Grid.Row="2" Text="S'authentifier pour continuer" HorizontalOptions="Center" FontSize="Body"/>
-          
 
             <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="CenterAndExpand" WidthRequest="400">
                 <Frame BackgroundColor="Transparent" BorderColor="Purple" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">

@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-20T16:43:25.353</Modified>
+      <Modified>2023-05-21T00:11:06.343</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-20T16:43:24.665</Modified>
+      <Modified>2023-05-21T00:11:05.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ScanMate.runtimeconfig.json">
       <PackagePath>ScanMate.runtimeconfig.json</PackagePath>
-      <Modified>2023-05-20T16:43:24.126</Modified>
+      <Modified>2023-05-20T17:13:52.631</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\ScanMate.dll">
       <PackagePath>ScanMate.dll</PackagePath>
-      <Modified>2023-05-20T16:43:20.367</Modified>
+      <Modified>2023-05-21T00:11:04.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ScanMate.exe</PackagePath>
-      <Modified>2023-05-20T16:43:20.398</Modified>
+      <Modified>2023-05-21T00:11:04.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.5\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -857,6 +857,10 @@
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2023-03-22T01:08:50.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.win32.systemevents\7.0.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Microsoft.Win32.SystemEvents.dll</PackagePath>
+      <Modified>2022-10-18T16:17:28.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
       <Modified>2022-12-07T05:51:52.000</Modified>
@@ -921,6 +925,30 @@
       <PackagePath>System.CodeDom.dll</PackagePath>
       <Modified>2022-10-18T16:16:40.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.configuration.configurationmanager\7.0.0\lib\net7.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
+      <Modified>2022-10-18T16:17:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.data.oledb\7.0.0\runtimes\win\lib\net7.0\System.Data.OleDb.dll">
+      <PackagePath>System.Data.OleDb.dll</PackagePath>
+      <Modified>2022-10-18T16:18:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.diagnostics.eventlog\7.0.0\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.Messages.dll">
+      <PackagePath>System.Diagnostics.EventLog.Messages.dll</PackagePath>
+      <Modified>2022-10-18T16:17:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.diagnostics.eventlog\7.0.0\runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll">
+      <PackagePath>System.Diagnostics.EventLog.dll</PackagePath>
+      <Modified>2022-10-18T16:17:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.diagnostics.performancecounter\7.0.0\runtimes\win\lib\net7.0\System.Diagnostics.PerformanceCounter.dll">
+      <PackagePath>System.Diagnostics.PerformanceCounter.dll</PackagePath>
+      <Modified>2022-10-18T16:18:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.drawing.common\7.0.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll">
+      <PackagePath>System.Drawing.Common.dll</PackagePath>
+      <Modified>2022-10-18T16:17:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.io.ports\8.0.0-preview.2.23128.3\runtimes\win\lib\net7.0\System.IO.Ports.dll">
       <PackagePath>System.IO.Ports.dll</PackagePath>
       <Modified>2023-02-28T17:10:58.000</Modified>
@@ -928,6 +956,18 @@
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.management\7.0.0\runtimes\win\lib\net7.0\System.Management.dll">
       <PackagePath>System.Management.dll</PackagePath>
       <Modified>2022-10-18T16:18:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.security.cryptography.protecteddata\7.0.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
+      <Modified>2022-10-18T16:17:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.security.permissions\7.0.0\lib\net7.0\System.Security.Permissions.dll">
+      <PackagePath>System.Security.Permissions.dll</PackagePath>
+      <Modified>2022-10-18T16:17:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\system.windows.extensions\7.0.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll">
+      <PackagePath>System.Windows.Extensions.dll</PackagePath>
+      <Modified>2022-10-18T16:17:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\.nuget\packages\microsoft.graphics.win2d\1.0.4\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -939,7 +979,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Moumou\Desktop\C# Q4\ScanMate\ScanMate\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ScanMate.deps.json">
       <PackagePath>ScanMate.deps.json</PackagePath>
-      <Modified>2023-05-20T16:43:25.071</Modified>
+      <Modified>2023-05-21T00:11:06.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.81\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
