@@ -5,9 +5,12 @@ namespace ScanMate.ViewModel;
 public partial class MainViewModel : BaseViewModel
 {
     [ObservableProperty]
-    public string userName;
+    public string userNameLogin;
     [ObservableProperty] 
-    public string password;
+    public string passwordLogin;
+
+    [ObservableProperty]
+    bool isntBusy = true;
 
     [ObservableProperty]
     public bool loggedIn;
@@ -24,22 +27,25 @@ public partial class MainViewModel : BaseViewModel
     [RelayCommand]
     public async Task GoToHomePage()
     {
+        IsntBusy = false;
 
-        await MyDBService.ReadUserTable();
-        await MyDBService.ReadAccessTable();
+        Globals.UserSet.Tables["Users"].Clear();
+        Globals.UserSet.Tables["Access"].Clear();
+
+        await MyDBService.FillUser();
         await MoveIntoList();
 
         foreach (var user in MyShownList)
         {
 
-            if (UserName == user.UserName && Password == user.UserPassword)
+            if ( UserNameLogin == user.UserName &&  PasswordLogin == user.UserPassword)
             {
-                loggedIn = true;
+                LoggedIn = true;
                 await Shell.Current.GoToAsync(nameof(HomePage), true);
                 return; 
             }
         }
-        if (loggedIn == false)
+        if (LoggedIn == false)
         {
             await Shell.Current.DisplayAlert("Database", "Utilisateur non trouvé", "OK");
         }

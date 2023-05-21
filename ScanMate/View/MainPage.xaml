@@ -27,12 +27,7 @@
 
            
             <Label Grid.Row="1" Text="Bienvenu sur LOL !" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
-            <Label Grid.Row="2" Text="Cliquez ici pour vous inscrire" HorizontalOptions="Center" FontSize="Body">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding GoToRegisterPageCommand}"/>
-                </Label.GestureRecognizers>
-            </Label>
-            <Label Grid.Row="3" Text="S'identifier pour continuer" HorizontalOptions="Center" FontSize="Body"/>
+            <Label Grid.Row="2" Text="S'identifier pour continuer" HorizontalOptions="Center" FontSize="Body"/>
             
 
             <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="CenterAndExpand" WidthRequest="400">
@@ -41,7 +36,7 @@
                         <Frame BackgroundColor="Aquamarine" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                             <Image Source="usericon.png" Aspect="AspectFill" Margin="0" />
                         </Frame>
-                        <Entry Text="{Binding UserName}" Placeholder="Nom d'utilisateur" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                        <Entry Text="{Binding UserNameLogin}" Placeholder="Nom d'utilisateur" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                     </StackLayout>
                 </Frame>
                 <Frame BackgroundColor="Transparent" BorderColor="Purple" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
@@ -49,13 +44,13 @@
                         <Frame BackgroundColor="Aquamarine" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                             <Image Source="pass.png" Aspect="AspectFill" Margin="0" />
                         </Frame>
-                        <Entry Text="{Binding Password}" Placeholder="Mot de passe" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                        <Entry Text="{Binding PasswordLogin}" Placeholder="Mot de passe" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                     </StackLayout>
                 </Frame>
 
                 <Button Text="Se connecter" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding GoToHomePageCommand}" IsEnabled="{Binding IsNotBusy}"/>
-                
-                <!--<Button Text="S'inscrire" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding LoginCommand}"/>-->
+
+                <Button Text="S'inscrire" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding GoToRegisterPageCommand}" IsEnabled="{Binding IsNotBusy}"/>
 
             </StackLayout>
         </Grid>

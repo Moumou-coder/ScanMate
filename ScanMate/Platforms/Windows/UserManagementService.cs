@@ -52,7 +52,7 @@ public partial class UserManagementService
             {
                 while (oleDbDataReader.Read())
                 {
-                    Globals.UserSet.Tables["Access"].Rows.Add(new object[] { oleDbDataReader[0], oleDbDataReader[1], oleDbDataReader[2], oleDbDataReader[3], oleDbDataReader[4], oleDbDataReader[5] });
+                    Globals.UserSet.Tables["Access"].Rows.Add(new object[] { oleDbDataReader[0], oleDbDataReader[1], oleDbDataReader[2], oleDbDataReader[3], oleDbDataReader[4], oleDbDataReader[5]});
                 }
             }
 
@@ -83,7 +83,7 @@ public partial class UserManagementService
             {
                 while (oleDbDataReader.Read())
                 {
-                    Globals.UserSet.Tables["Users"].Rows.Add(new object[] { oleDbDataReader[0], oleDbDataReader[1], oleDbDataReader[2], oleDbDataReader[3] });
+                    Globals.UserSet.Tables["Users"].Rows.Add(new object[] { oleDbDataReader[0], oleDbDataReader[1], oleDbDataReader[2], oleDbDataReader[3]});
                 }
             }
 
@@ -136,11 +136,11 @@ public partial class UserManagementService
 
             if (Users_Adapter.InsertCommand.ExecuteNonQuery() != 0)
             {
-                await Shell.Current.DisplayAlert("Database", "User ins�r�", "OK");
+                await Shell.Current.DisplayAlert("Database", "User successfully inserted", "OK");
             }
             else
             {
-                await Shell.Current.DisplayAlert("Database", "User non ins�r�", "OK");
+                await Shell.Current.DisplayAlert("Database", "User not inserted", "OK");
 
             }
 
@@ -167,11 +167,11 @@ public partial class UserManagementService
 
             if (Users_Adapter.DeleteCommand.ExecuteNonQuery() != 0)
             {
-                await Shell.Current.DisplayAlert("Database", "User supprim�", "OK");
+                await Shell.Current.DisplayAlert("Database", "User deleted", "OK");
             }
             else
             {
-                await Shell.Current.DisplayAlert("Database", "User non supprim�", "OK");
+                await Shell.Current.DisplayAlert("Database", "User not deleted", "OK");
 
             }
 
