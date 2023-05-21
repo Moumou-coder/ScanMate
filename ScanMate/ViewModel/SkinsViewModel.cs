@@ -14,12 +14,14 @@ public partial class SkinsViewModel : BaseViewModel
 
 
     public SkinsService skinsService;
+    public MainViewModel mainViewModel;
     public ObservableCollection<Skins> mySkinList { get; set; } = new();
     
 
-    public SkinsViewModel(SkinsService mySkins)
+    public SkinsViewModel(SkinsService mySkins, MainViewModel mainViewModel)
     {
         this.skinsService = mySkins;
+        this.mainViewModel = mainViewModel;
     }
 
     [RelayCommand]
@@ -35,6 +37,27 @@ public partial class SkinsViewModel : BaseViewModel
             await Shell.Current.DisplayAlert("Error : ", ex.Message, "OK");
         }
 
+    }
+
+    [RelayCommand]
+    public async Task DeleteSkin(Skins skin)
+    {
+        if (mainViewModel.UserAccess == 2 || mainViewModel.UserAccess == 1)
+        {
+            try
+            {
+                await skinsService.DeleteSkin(skin);
+                mySkinList.Remove(skin);
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
+            }
+        }
+        else
+        {
+            await Shell.Current.DisplayAlert("Attention : ", "Vous n'avez pas les droits ", "OK");
+        }
     }
 
     [RelayCommand]
