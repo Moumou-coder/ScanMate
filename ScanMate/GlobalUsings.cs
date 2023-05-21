@@ -26,5 +26,6 @@ internal class Globals
 {
     public static List<Skins> StaticListSkins = new List<Skins>();
     public static List<Champions> StaticListChampions = new List<Champions>();
+    public static List<Profil> StaticListProfil = new List<Profil>();
     public static DataSet UserSet = new();
 }
