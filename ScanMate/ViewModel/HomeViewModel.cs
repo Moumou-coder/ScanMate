@@ -7,7 +7,7 @@ public partial class HomeViewModel : BaseViewModel
     BarCodeService MyBarCodeService;
 
     [ObservableProperty]
-    string myTitle = "League Of Legend V1.0";
+    string myTitle = "League Of Legend V2.0";
     [ObservableProperty]
     string myID = "48684";
     [ObservableProperty]

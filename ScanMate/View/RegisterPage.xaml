@@ -4,59 +4,56 @@
              x:Class="ScanMate.View.RegisterPage"
              xmlns:local="clr-namespace:ScanMate"
              xmlns:viewmodel="clr-namespace:ScanMate.ViewModel"
-             x:DataType="viewmodel:RegisterViewModel">
+             x:DataType="viewmodel:RegisterViewModel"
+             Title="Inscription"
+             >
 
 
-    <Grid>
-        <StackLayout>
-            <Frame BackgroundColor="Black" HeightRequest="100" WidthRequest="100" CornerRadius="50" Padding="0" Margin="0,50,0,0" HorizontalOptions="Center">
+    <Grid VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center">
+            <Frame BackgroundColor="Black" HeightRequest="100" WidthRequest="100" CornerRadius="50" Padding="0" Margin="50" HorizontalOptions="Center">
                 <Image Source="lol.png" Aspect="AspectFill" Margin="0"/>
             </Frame>
         </StackLayout>
 
-        <Grid RowSpacing="5" Grid.Row="1" Margin="20,20,20,0">
+        <Grid Grid.Row="1" RowSpacing="2" Margin="20,20,20,0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="50"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
+                <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
 
-            <Label Grid.Row="1" Text="Bienvenue sur LOL !" HorizontalOptions="Center" FontSize="Title" FontAttributes="Bold"/>
-            <Label Grid.Row="2" Text="S'inscrire pour continuer" HorizontalOptions="Center" FontSize="Body"/>
-          
-
-            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="CenterAndExpand" WidthRequest="400">
-                <Frame BackgroundColor="Transparent" BorderColor="Aquamarine" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+            <StackLayout Grid.Row="0" Orientation="Vertical" HorizontalOptions="CenterAndExpand" WidthRequest="400">
+                <Frame BackgroundColor="Transparent" BorderColor="Purple" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                     <StackLayout Orientation="Horizontal">
                         <Frame BackgroundColor="Aquamarine" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                             <Image Source="usericon.png" Aspect="AspectFill" Margin="0" />
                         </Frame>
-                        <Entry Text="{Binding UserNameRegist}" Placeholder="Nom d'utilisateur" TextColor="Purple" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                        <Entry Text="{Binding UserNameRegist}" Placeholder="Nom d'utilisateur" TextColor="Aquamarine" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                     </StackLayout>
                 </Frame>
-                <Frame BackgroundColor="Transparent" BorderColor="Aquamarine" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <Frame BackgroundColor="Transparent" BorderColor="Purple" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                     <StackLayout Orientation="Horizontal">
                         <Frame BackgroundColor="Aquamarine" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                             <Image Source="access.png" Aspect="AspectFill" Margin="0" />
                         </Frame>
-                        <Entry Text="{Binding Accesstype}" Placeholder="User access type" TextColor="Purple" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                        <Entry Text="{Binding Accesstype}" Placeholder="User access type" TextColor="Aquamarine" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                     </StackLayout>
                 </Frame>
-               
-                <Frame BackgroundColor="Transparent" BorderColor="Aquamarine" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <Frame BackgroundColor="Transparent" BorderColor="Purple" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                     <StackLayout Orientation="Horizontal">
                         <Frame BackgroundColor="Aquamarine" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
                             <Image Source="pass.png" Aspect="AspectFill" Margin="0" />
                         </Frame>
-                        <Entry Text="{Binding PasswordRegist}" Placeholder="Mot de passe" TextColor="Purple" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                        <Entry Text="{Binding PasswordRegist}" Placeholder="Mot de passe" TextColor="Aquamarine" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                     </StackLayout>
                 </Frame>
 
-                <Button Text="S'inscrire" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding InsertAndGoToLoginCommand}" IsEnabled="{Binding IsNotBusy}"/>
-
+                <Button Grid.Row="1" Text="Enregistrer" BackgroundColor="Aquamarine" TextColor="Black" FontAttributes="Bold" CornerRadius="20" WidthRequest="200" Margin="0,15,0,0" Command="{Binding InsertAndGoToLoginCommand}" IsEnabled="{Binding IsNotBusy}"/>
             </StackLayout>
         </Grid>
     </Grid>
