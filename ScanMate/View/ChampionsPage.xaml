@@ -23,7 +23,7 @@
                                     Aspect="Fill"
                                     Source="{Binding Image}"
                                     HorizontalOptions="Center"/>
-                            <Label HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" Text="{Binding Name}"/>
+                            <Label HorizontalOptions="Center" FontSize="20" FontAttributes="Bold" Text="{Binding Name}" />
                         </VerticalStackLayout>
                     </Frame>
                 </DataTemplate>

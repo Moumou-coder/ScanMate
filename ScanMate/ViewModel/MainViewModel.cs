@@ -34,16 +34,22 @@ public partial class MainViewModel : BaseViewModel
 
             if (UserName == user.UserName && Password == user.UserPassword)
             {
-                loggedIn = true;
+                LoggedIn = true;
                 await Shell.Current.GoToAsync(nameof(HomePage), true);
-                return; 
+                return;
             }
         }
-        if (loggedIn == false)
+        if (LoggedIn == false)
         {
             await Shell.Current.DisplayAlert("Database", "Utilisateur non trouvé", "OK");
         }
 
+    }
+
+    [RelayCommand]
+    public async Task Login()
+    {
+        await Shell.Current.GoToAsync(nameof(HomePage), true);
     }
 
     internal async Task MoveIntoList()

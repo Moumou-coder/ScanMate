@@ -29,12 +29,16 @@ public partial class ChampionsViewModel : BaseViewModel
     [RelayCommand]
     async Task GoToDetailsAsync(Champions champion)
     {
+        IsBusy = true; 
+
         if (champion is null) return;
 
         await Shell.Current.GoToAsync($"{nameof(ChampionDetailsPage)}", true, new Dictionary<string, object>
         {
             {"Champion", champion}
         });
+
+        IsBusy = false;
     }
 
 }

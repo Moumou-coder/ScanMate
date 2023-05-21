@@ -2,10 +2,8 @@
 
 namespace ScanMate.ViewModel;
 
-public partial class UserViewModel : ObservableObject
+public partial class UserViewModel : BaseViewModel
 {
-    [ObservableProperty]
-    bool isNotBusy = true;
 
     UserManagementService MyDBService;
 
@@ -20,7 +18,7 @@ public partial class UserViewModel : ObservableObject
     [RelayCommand]
     internal async Task FillAccessTable()
     {
-        IsNotBusy = false;
+        IsBusy = true;
 
         Globals.UserSet.Tables["Users"].Clear();
         Globals.UserSet.Tables["Access"].Clear();
@@ -38,13 +36,13 @@ public partial class UserViewModel : ObservableObject
             await Shell.Current.DisplayAlert("Database", ex.Message, "OK");
         }
 
-        IsNotBusy = true;
+        IsBusy = false;
     }
 
     [RelayCommand]
     internal async Task FillUserTable()
     {
-        IsNotBusy = false;
+        IsBusy = true;
 
         Globals.UserSet.Tables["Users"].Clear();
         Globals.UserSet.Tables["Access"].Clear();
@@ -53,13 +51,13 @@ public partial class UserViewModel : ObservableObject
 
         await MoveIntoList();
 
-        IsNotBusy = true;
+        IsBusy = false;
     }
 
     [RelayCommand]
     internal async Task UpdateTable()
     {
-        IsNotBusy = false;
+        IsBusy = true;
 
         DataRow User1 = Globals.UserSet.Tables["Users"].NewRow();
         User1[1] = "aaeztza";
@@ -78,24 +76,24 @@ public partial class UserViewModel : ObservableObject
 
         await MoveIntoList();
 
-        IsNotBusy = true;
+        IsBusy = false;
     }
 
     [RelayCommand]
     internal async Task InsertDB()
     {
-        IsNotBusy = false;
+        IsBusy = true;
         await MyDBService.InsertUser("Fred", "abab", 1);
         await MoveIntoList();
-        IsNotBusy = true;
+        IsBusy = false;
     }
     [RelayCommand]
     internal async Task DeleteDB()
     {
-        IsNotBusy = false;
+        IsBusy = true;
         await MyDBService.DeleteUser("Fred");
         await MoveIntoList();
-        IsNotBusy = true;
+        IsBusy = false;
     }
 
     internal async Task MoveIntoList()
