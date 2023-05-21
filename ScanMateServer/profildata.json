@@ -1,0 +1,59 @@
+[
+	{
+		"Profil_ID": "17254",
+		"UserName": "Diamond Killer",
+		"ChampionsAmount": "10",
+		"Position": "Top",
+		"Rank": "silver.png",
+		"TierList": "S"
+	},
+	{
+		"Profil_ID": "21348",
+		"UserName": "Flash",
+		"ChampionsAmount": "3",
+		"Position": "Jungler",
+		"Rank": "bronze.png",
+		"TierList": "A"
+	},
+	{
+		"Profil_ID": "48684",
+		"UserName": "AKA Alpha",
+		"ChampionsAmount": "34",
+		"Position": "Support",
+		"Rank": "gold.png",
+		"TierList": "B"
+	},
+	{
+		"Profil_ID": "45321",
+		"UserName": "AKA Alpha",
+		"ChampionsAmount": "34",
+		"Position": "Support",
+		"Rank": "silver.png",
+		"TierList": "B"
+	},
+	{
+		"Profil_ID": "15948",
+		"UserName": "AKA Alpha",
+		"ChampionsAmount": "34",
+		"Position": "Support",
+		"Rank": "iron.png",
+		"TierList": "B"
+	},
+	{
+		"Profil_ID": "75423",
+		"UserName": "AKA Alpha",
+		"ChampionsAmount": "34",
+		"Position": "Support",
+		"Rank": "diamond.png",
+		"TierList": "B"
+	},
+	{
+		"Profil_ID": "36984",
+		"UserName": "AKA Alpha",
+		"ChampionsAmount": "34",
+		"Position": "Support",
+		"Rank": "challenger.png",
+		"TierList": "B"
+	}
+	
+]
