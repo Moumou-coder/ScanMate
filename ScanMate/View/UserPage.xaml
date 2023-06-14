@@ -12,16 +12,7 @@
         <VerticalStackLayout    Spacing="25"
                                 Padding="30,0"
                                 VerticalOptions="Center">
-            <HorizontalStackLayout>
-                <Button Text="Fill table"
-                        HeightRequest="50" WidthRequest="150"
-                        Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=FillUserTableCommand}"
-                        HorizontalOptions="Center" 
-                        IsEnabled="{Binding IsNotBusy}"
-                        />
             
-            </HorizontalStackLayout>
-
             <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="Auto,*" Margin="20">
                 <Label Text="UserName" Grid.Row="0" Grid.Column="1" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Label Text="UserPassword" Grid.Row="0" Grid.Column="2" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
@@ -35,13 +26,23 @@
                                     <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Text="{Binding UserName}" TextColor="Black"/>
                                     <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" Text="{Binding UserPassword}" TextColor="Black"/>
                                     <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="3" Text="{Binding UserAccessType}" TextColor="Black"/>
-                                    <Button Text="Delete" Grid.Column="4" Command="{Binding Source={RelativeSource AncestorType={x:Type TabbedPage}}, Path=BindingContext.DeleteUserCommand}" CommandParameter="{Binding .}" BackgroundColor="Red" TextColor="White" WidthRequest="80" HorizontalOptions="End" Margin="10,0" />
+                                    <Button Text="Delete" Grid.Column="4" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=DeleteUserCommand}"   CommandParameter="{Binding .}" BackgroundColor="Red" TextColor="White" WidthRequest="80" HorizontalOptions="End" Margin="10,0" />
                                 </Grid>
                             </Border>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </Grid>
+
+            <StackLayout>
+                <Button Text="Fill table"
+                        HeightRequest="50" WidthRequest="150"
+                        Command="{x:Binding Source={RelativeSource AncestorType={x:Type viewmodel:UserViewModel}}, Path=FillUserTableCommand}"
+                        HorizontalOptions="Center" 
+                        IsEnabled="{Binding IsNotBusy}"
+                        />
+            </StackLayout>
+            
         </VerticalStackLayout>
     </ScrollView>
 

@@ -11,6 +11,5 @@ public partial class UserPage : ContentPage
     protected override void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
-        
     }
 }
