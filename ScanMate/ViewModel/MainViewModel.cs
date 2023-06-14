@@ -35,6 +35,7 @@ public partial class MainViewModel : BaseViewModel
         Globals.UserSet.Tables["Users"].Clear();
         Globals.UserSet.Tables["Access"].Clear();
 
+        await MyDBService.ReadAccessTable();
         await MyDBService.FillUser();
         await MoveIntoList();
 

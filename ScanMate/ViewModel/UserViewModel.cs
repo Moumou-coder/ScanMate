@@ -1,6 +1,4 @@
-﻿using ScanMate.Services;
-
-namespace ScanMate.ViewModel;
+﻿namespace ScanMate.ViewModel;
 
 public partial class UserViewModel : BaseViewModel
 {
@@ -21,21 +19,29 @@ public partial class UserViewModel : BaseViewModel
     {
         IsBusy = true;
 
-        Globals.UserSet.Tables["Users"].Clear();
         Globals.UserSet.Tables["Access"].Clear();
+        Globals.UserSet.Tables["Users"].Clear();
 
+        await MyDBService.ReadAccessTable();
         await MyDBService.FillUser();
-
         await MoveIntoList();
 
         IsBusy = false;
     }
 
     [RelayCommand]
-    internal async Task DeleteUser()
+    internal async Task DeleteUser(User user)
     {
-        await MyDBService.DeleteUser("Zoniof");
-        await MoveIntoList();
+        try
+        {
+            await MyDBService.DeleteUser(user.UserName);
+            await MoveIntoList();
+        }
+        catch (Exception ex)
+        {
+            await Shell.Current.DisplayAlert("Delete User", ex.Message, "OK");
+        }
+        
     }
 
 
@@ -64,4 +70,6 @@ public partial class UserViewModel : BaseViewModel
             MyShownList.Add(item);
         }
     }
+
+
 }
